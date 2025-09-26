@@ -1,0 +1,33 @@
+import React from "react";
+import "./style.css";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+const CRMCalculatorTools = () => {
+  return (
+    <div className="sales-management-wrapper-dataF" data-aos="fade-up"
+    data-aos-offset="50"
+    data-aos-delay="50"
+    data-aos-duration="1500"
+    data-aos-mirror="true"
+    data-aos-once="false"
+    data-aos-anchor-placement="top-bottom">
+      <div className="content-wrapperF">
+        <p className="sale-titleF">Strategic</p>
+        <p className="sales-heading-salesF">Use</p>
+        <p className="sales-typeF">Fixed Markup Rules</p>
+        <p className="sales-description-salesF">
+        Lock in fixed markups across your products and<br/> services to ensure stability and simplicity in your<br/> quoting process.
+        </p>
+      </div>
+      <div className="sales-imageF">
+         <LazyLoadImage
+            alt="multi-site business software"
+            src="https://memate-website.s3.ap-southeast-2.amazonaws.com/custombusiness02-min.png"
+            effect="blur" 
+            type="image/svg+xml"
+            />
+      </div>
+    </div>
+  );
+};
+
+  export default CRMCalculatorTools;
