@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://memate.com.au/sitemap.xml
