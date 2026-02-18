@@ -29,7 +29,7 @@ export default function MeMateCalculator() {
  
     industry: "",
     marketType: "",
-    profitability: 50,
+    profitability: 0,
     revenueType: 50,
     customerConcentration: 50,
     salesDriver: 50,
@@ -150,7 +150,7 @@ export default function MeMateCalculator() {
   };
 
   useEffect(() => {
-    console.log("📊 Current Form State:", {
+    console.log("Current Form State:", {
       tradingYears: form.tradingYears,
       tradingFactor,
       industry: form.industry,

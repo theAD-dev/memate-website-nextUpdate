@@ -28,18 +28,22 @@ ChartJS.register(
 export default function Chart({ valuation, uplift }) {
   const [showModal, setShowModal] = useState(false);
 
-  const safeVal = Math.max(valuation, 100000);
-  const safeUp = Math.max(uplift, 150000);
+const safeVal = valuation ? valuation : 0;
+const safeUp = uplift ? uplift : 0;
+// console.log("SafeVal:", safeVal, "Uplift:", uplift);
 
   const labels = ["Now", "Year 1", "Year 2", "Year 3", "Year 5"];
 
-  const baseData = labels.map((_, i) =>
-    Math.round(safeVal * (1 + i * 0.03))
-  );
+const baseData =
+  safeVal === 0
+    ? labels.map(() => 0)
+    : labels.map((_, i) => Math.round(safeVal * (1 + i * 0.03)));
 
-  const upliftData = labels.map((_, i) =>
-    Math.round(safeUp * (1 + i * 0.06))
-  );
+const upliftData =
+  safeUp === 0
+    ? labels.map(() => 0)
+    : labels.map((_, i) => Math.round(safeUp * (1 + i * 0.06)));
+
 
   const customPlugin = {
     id: "customLabels",
@@ -111,28 +115,33 @@ useEffect(() => {
 }, []);
   const data = {
     labels,
-    datasets: [
-      {
-        label: "Projected Value",
-        data: baseData,
-        borderColor: "black",
-        borderWidth: 2.5,
-        tension: 0.45,
-        pointRadius: 0,
-      },
+datasets: [
+  {
+    label: "Projected Value",
+    data: baseData,
+    borderColor: "black",
+    borderWidth: 2.5,
+    tension: 0.45,
+     pointRadius: (ctx) =>
+            ctx.dataIndex === upliftData.length - 1 ? 7 : 0,
+        },
+  ...(safeUp === 0
+    ? []
+    : [
+        {
+          label: "With MeMate",
+          data: upliftData,
+          borderWidth: 4,
+          tension: 0.45,
+          borderColor: "#2daae1",
+          fill: true,
+          backgroundColor: "rgba(45,170,225,0.08)",
+          pointRadius: (ctx) =>
+            ctx.dataIndex === upliftData.length - 1 ? 7 : 0,
+        },
+      ]),
+],
 
-      {
-        label: "With MeMate",
-        data: upliftData,
-        borderWidth: 4,
-        tension: 0.45,
-        borderColor: "#2daae1",
-        fill: true,
-        backgroundColor: "rgba(45,170,225,0.08)",
-        pointRadius: (ctx) =>
-          ctx.dataIndex === upliftData.length - 1 ? 7 : 0,
-      },
-    ],
   };
 
   const options = {
@@ -149,11 +158,15 @@ useEffect(() => {
         grid: { color: "#f2f2f2" },
         ticks: { display: false },
       },
-      y: {
-        grid: { display: false },
-        ticks: { display: false },
-        beginAtZero: true,
-      },
+y: {
+  min: 0,
+  max: safeVal === 0 && safeUp === 0 ? 1 : undefined,
+  beginAtZero: true,
+  grid: { display: false },
+  ticks: { display: false },
+},
+
+
     },
 
     layout: {
@@ -189,7 +202,7 @@ useEffect(() => {
       <div style={{ position: "relative", height: "400px", marginTop: "20px" }}>
         <div style={{
           position: "absolute",
-          left: "-0px",
+          left: "-50px",
           top: "50%",
           transform: "translateY(-50%) rotate(-90deg)",
           fontSize: "14px",
@@ -200,7 +213,7 @@ useEffect(() => {
         }}>
           Business value
         </div>
-        <div style={{ height: "380px", marginLeft: "0px" }}>
+        <div style={{ height: "390px", marginLeft: "-60px" }}>
           <Line data={data} options={options} plugins={[customPlugin]} />
         </div>
         <div style={{

@@ -1,24 +1,49 @@
+"use client";
+
+import { useState, useEffect } from "react";
+
 export default function SpecialsStep({ form, update }) {
   if (!form) return null;
 
-  const RangeSlider = ({ title, field, leftText, rightText }) => (
-    <div className="slider-box">
-      <h4>{title}</h4>
-      <input
-        type="range"
-        min="0"
-        max="100"
-        value={form[field]}
-        onChange={(e) => update(field, e.target.value)}
-        className="exact-range"
-      />
+  // ✅ Smooth Range Slider Component
+  const RangeSlider = ({ title, field, leftText, rightText }) => {
+    const [localValue, setLocalValue] = useState(form[field] ?? 0);
 
-      <div className="slider-labels">
-        <span>{leftText}</span>
-        <span>{rightText}</span>
+    // ✅ Sync slider if parent updates externally
+    useEffect(() => {
+      setLocalValue(form[field] ?? 0);
+    }, [form[field]]);
+
+    // ✅ Commit value after drag ends
+    const commitValue = () => {
+      update(field, Number(localValue));
+    };
+
+    return (
+      <div className="slider-box">
+        <h4>{title}</h4>
+
+        <input
+          type="range"
+          min="0"
+          max="100"
+          value={localValue}
+          onChange={(e) => setLocalValue(e.target.value)} // smooth drag
+          onMouseUp={commitValue} // commit when released (desktop)
+          onTouchEnd={commitValue} // commit when released (mobile)
+          className="exact-range"
+        />
+
+        {/* ✅ Optional live percentage display */}
+        {/* <p className="slider-value">{localValue}%</p> */}
+
+        <div className="slider-labels">
+          <span>{leftText}</span>
+          <span>{rightText}</span>
+        </div>
       </div>
-    </div>
-  );
+    );
+  };
 
   return (
     <div className="specials-grid">

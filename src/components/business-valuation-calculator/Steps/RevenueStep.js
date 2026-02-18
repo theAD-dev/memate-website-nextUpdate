@@ -10,7 +10,7 @@ export default function RevenueStep({ form, update }) {
           <label>Revenue this year</label>
           <input
             type="number"
-            value={form.revenue1}
+            placeholder={form.revenue1}
             onChange={(e) => update("revenue1", Number(e.target.value))}
           />
         </div>
@@ -19,7 +19,7 @@ export default function RevenueStep({ form, update }) {
           <label>Revenue last year</label>
           <input
             type="number"
-            value={form.revenue2}
+            placeholder={form.revenue2}
             onChange={(e) => update("revenue2", Number(e.target.value))}
           />
         </div>
@@ -28,14 +28,14 @@ export default function RevenueStep({ form, update }) {
           <label>Revenue two years ago (Optional)</label>
           <input
             type="number"
-            value={form.revenue3}
+            placeholder={form.revenue3}
             onChange={(e) => update("revenue3", Number(e.target.value))}
           />
         </div>
         <div>
           <label>Trading years total</label>
           <select
-            value={form.tradingYears}
+            placeholder={form.tradingYears}
             onChange={(e) =>
               update("tradingYears", Number(e.target.value))
             }
