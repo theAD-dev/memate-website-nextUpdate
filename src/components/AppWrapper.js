@@ -1,11 +1,14 @@
-'use client';
+"use client";
 
-import React, { useState, useEffect } from 'react';
-import { usePathname } from 'next/navigation';
-import { blogList, blogLatest, getCategories } from '../api/blogAPI';
-import AOS from 'aos';
-import { gsap } from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import React, { useState, useEffect } from "react";
+import { usePathname } from "next/navigation";
+import { blogList, blogLatest, getCategories } from "../api/blogAPI";
+import AOS from "aos";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import Script from "next/script";
+import Popup from "../layout/Popup"
+import LinkedInCampaign from "./linkdin-compaign";
 
 // Register ScrollTrigger plugin with GSAP
 gsap.registerPlugin(ScrollTrigger);
@@ -13,17 +16,16 @@ gsap.registerPlugin(ScrollTrigger);
 export default function AppWrapper({ children }) {
   // Initialize AOS
   useEffect(() => {
-    if (typeof window !== 'undefined') {
+    if (typeof window !== "undefined") {
       AOS.init({
         duration: 1000,
-        easing: 'ease-in-out',
+        easing: "ease-in-out",
         once: false,
         mirror: true,
-        offset: 50
+        offset: 50,
       });
     }
   }, []);
-  
 
   const pathname = usePathname();
 
@@ -38,10 +40,11 @@ export default function AppWrapper({ children }) {
   const limit = 12;
 
   useEffect(() => {
-    if (typeof document !== 'undefined') {
-      const pathClass = pathname === "/"
-        ? "home"
-        : pathname.replace(/\//g, "-").replace(/^-|-$/g, "");
+    if (typeof document !== "undefined") {
+      const pathClass =
+        pathname === "/"
+          ? "home"
+          : pathname.replace(/\//g, "-").replace(/^-|-$/g, "");
       document.body.classList.add(`page-${pathClass}`);
       return () => {
         document.body.classList.remove(`page-${pathClass}`);
@@ -54,27 +57,29 @@ export default function AppWrapper({ children }) {
     // First, try to load from sessionStorage
     let savedlatestPostData = [];
     try {
-      if (typeof window !== 'undefined') {
-        savedlatestPostData = JSON.parse(sessionStorage.getItem('latestPostData') || "[]");
+      if (typeof window !== "undefined") {
+        savedlatestPostData = JSON.parse(
+          sessionStorage.getItem("latestPostData") || "[]"
+        );
         if (savedlatestPostData?.length > 0) {
           setPostsLatest(savedlatestPostData);
           return; // Don't fetch if we have cached data
         }
       }
     } catch (error) {
-      console.error('Error parsing latestPostData from sessionStorage:', error);
+      console.error("Error parsing latestPostData from sessionStorage:", error);
     }
 
     // Fetch latest posts if no cached data
     const fetchDataLatest = async () => {
       try {
         const dataLatest = await blogLatest();
-        if (typeof window !== 'undefined') {
-          sessionStorage.setItem('latestPostData', JSON.stringify(dataLatest));
+        if (typeof window !== "undefined") {
+          sessionStorage.setItem("latestPostData", JSON.stringify(dataLatest));
         }
         setPostsLatest(dataLatest);
       } catch (err) {
-        console.log('Error during getting the latest post:', err);
+        console.log("Error during getting the latest post:", err);
       }
     };
 
@@ -86,26 +91,26 @@ export default function AppWrapper({ children }) {
     // First, try to load from sessionStorage
     let savedCatData = [];
     try {
-      if (typeof window !== 'undefined') {
-        savedCatData = JSON.parse(sessionStorage.getItem('latestCat') || "[]");
+      if (typeof window !== "undefined") {
+        savedCatData = JSON.parse(sessionStorage.getItem("latestCat") || "[]");
         if (savedCatData?.length > 0) {
           setPostsCategories(savedCatData);
           return; // Don't fetch if we have cached data
         }
       }
     } catch (error) {
-      console.error('Error parsing latestCat from sessionStorage:', error);
+      console.error("Error parsing latestCat from sessionStorage:", error);
     }
 
     const fetchCateLatest = async () => {
       try {
         const dataCat = await getCategories();
-        if (typeof window !== 'undefined') {
-          sessionStorage.setItem('latestCat', JSON.stringify(dataCat));
+        if (typeof window !== "undefined") {
+          sessionStorage.setItem("latestCat", JSON.stringify(dataCat));
         }
         setPostsCategories(dataCat);
       } catch (err) {
-        console.log('Error during getting the categories:', err);
+        console.log("Error during getting the categories:", err);
       }
     };
 
@@ -134,48 +139,66 @@ export default function AppWrapper({ children }) {
             let totalFound = 0;
             const maxPages = 10; // Safety limit to prevent infinite loops
             let searchPage = 1; // Start searching from page 1
-            
+
             // Search through pages to find posts for the specific category
             while (collectedPosts.length < limit && searchPage <= maxPages) {
-              const response = await blogList(searchPage, limit * 3, activeCategory); // Fetch more to increase chances
+              const response = await blogList(
+                searchPage,
+                limit * 3,
+                activeCategory
+              ); // Fetch more to increase chances
               const { data, total } = response;
-              
+
               if (!data || data.length === 0) break;
-              
+
               // Filter posts that actually belong to the selected category
-              const correctCategoryPosts = data.filter(post => post.category.id === activeCategory);
-              
+              const correctCategoryPosts = data.filter(
+                (post) => post.category.id === activeCategory
+              );
+
               // Add unique posts
-              correctCategoryPosts.forEach(post => {
-                if (!collectedPosts.some(existing => existing.id === post.id) && collectedPosts.length < limit) {
+              correctCategoryPosts.forEach((post) => {
+                if (
+                  !collectedPosts.some((existing) => existing.id === post.id) &&
+                  collectedPosts.length < limit
+                ) {
                   collectedPosts.push(post);
                 }
               });
-              
+
               totalFound = total;
-              
+
               // If we found enough posts or no more posts available, break
-              if (collectedPosts.length >= limit || correctCategoryPosts.length === 0) break;
-              
+              if (
+                collectedPosts.length >= limit ||
+                correctCategoryPosts.length === 0
+              )
+                break;
+
               searchPage++;
             }
-            
+
             return {
               data: collectedPosts,
-              total: totalFound
+              total: totalFound,
             };
           };
-          
+
           const { data, total } = await fetchCategoryPosts();
           setTotalPosts(total);
-          
+
           setPosts((prevPosts) => {
-            const newPosts = currentPage === 1 
-              ? data || [] 
-              : [...prevPosts, ...(data?.filter(
-                  (newPost) => !prevPosts.some((post) => post.id === newPost.id)
-                ) || [])];
-            
+            const newPosts =
+              currentPage === 1
+                ? data || []
+                : [
+                    ...prevPosts,
+                    ...(data?.filter(
+                      (newPost) =>
+                        !prevPosts.some((post) => post.id === newPost.id)
+                    ) || []),
+                  ];
+
             // Refresh AOS after content changes
             setTimeout(() => AOS.refresh(), 100);
             return newPosts;
@@ -191,7 +214,7 @@ export default function AppWrapper({ children }) {
               (newPost) => !prevPosts.some((post) => post.id === newPost.id)
             );
             const newPosts = [...prevPosts, ...uniquePosts];
-            
+
             // Refresh AOS after content changes
             setTimeout(() => AOS.refresh(), 100);
             return newPosts;
@@ -222,12 +245,18 @@ export default function AppWrapper({ children }) {
     totalPosts,
     loading,
     handleNext,
-    error
+    error,
   });
 
   return (
-    <div className="App">
-      {childrenWithProps}
-    </div>
+    <>
+    <Popup />
+      <Script
+        src="https://www.google.com/recaptcha/api.js"
+        strategy="lazyOnload"
+      />
+      <LinkedInCampaign strategy="lazyOnload"/>
+      <div className="App">{childrenWithProps}</div>
+    </>
   );
 }

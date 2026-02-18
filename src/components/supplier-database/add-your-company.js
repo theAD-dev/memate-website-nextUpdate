@@ -79,6 +79,13 @@ function AddYourCompany() {
 
 
   const onSubmit = async (data) => {
+    const token = (typeof window !== 'undefined' && typeof grecaptcha !== 'undefined')
+      ? grecaptcha.getResponse()
+      : (captchaValue || '');
+    if (!token) {
+      setError('Please complete the CAPTCHA.');
+      return;
+    }
  const supplier_industries_id = data.industry?.value || null;
 const supplier_services_id = data.supplied_services?.value || '';
 
@@ -107,6 +114,7 @@ const supplier_services_id = data.supplied_services?.value || '';
       formData.append("postcode", data.postcode || "");
       formData.append("supplier_industries_id", supplier_industries_id);
       formData.append("supplier_services_id", supplier_services_id);
+      formData.append("token", token);
       const myHeaders = new Headers();
       myHeaders.append("X-Api-Key", "3fa85f64d51b6c8e74313f7c69aef82d");
   
@@ -137,7 +145,8 @@ const supplier_services_id = data.supplied_services?.value || '';
   };
   
   const handleCaptchaChange = (value) => {
-    // setCaptchaValue(value);
+    setCaptchaValue(value);
+    setError('');
   };
 
   const customStyles = {
@@ -435,7 +444,7 @@ const supplier_services_id = data.supplied_services?.value || '';
                 </div>
                 <div className={style.marginbotton}>
                   <ReCAPTCHA
-                    sitekey="6LfAwdMqAAAAAFtI7SUPXKb1ew7C0jUYRvxDqjpS"
+                    sitekey={process.env.MAIL_SITE_KEY}
                     onChange={handleCaptchaChange}
                   />
                   {error && <p style={{ color: 'red' }}>{error}</p>}

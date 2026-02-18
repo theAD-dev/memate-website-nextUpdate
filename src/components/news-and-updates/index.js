@@ -76,36 +76,19 @@ const NewsAndUpdate = ({ postsLatest }) => {
   
 
   return (
-    <div className="slider-section1 sliderSection1News sliderSectionShadowl bottom-management bottom-managementw" >
+    <div className="slider-section1 ArticleHome sliderSection1News sliderSectionShadowl bottom-management bottom-managementw" >
       <div className="success-stories-section">
         <div className="section-header" style={{ textAlign: 'center', marginBottom: '50px' }}>
-          <h2 style={{ 
-            fontSize: '40px', 
-            fontWeight: '100', 
-            color: '#29292B',
-            marginBottom: '20px',
-            fontFamily: 'sequel_sans_semi_bold_disp'
-          }}>
-            News and Updates
-          </h2>
-          <p style={{
-            fontSize: '18px',
-            color: '#888E9E',
-            maxWidth: '600px',
-            margin: '0 auto',
-            lineHeight: '1.6',
-            fontFamily: 'sequel_sans'
-          }}>
-            Stay up to date with the latest news from MeMate and our newest software updates
-          </p>
+          <h2>News and Updates</h2>
+          <p>Stay up to date with the latest news from MeMate and our newest software updates</p>
         </div>
         <div className="newsandUpdates">
           <div className="NewsflexWrap">
             {/* Latest News Section */}
             <div className="Newsitem">
               <div className="itemHead">
-                <span>Latest News</span>
-                <Link href="/news">View All News</Link>
+                <span>News</span>
+                <Link href="/news">All News</Link>
               </div>
               <div>
                 <ul>
@@ -146,8 +129,8 @@ const NewsAndUpdate = ({ postsLatest }) => {
             {/* Software Updates Section */}
             <div className="Newsitem">
               <div className="itemHead">
-                <span>Software Updates</span>
-                <Link href="/memate-software-updates">View All Updates</Link>
+                <span>Updates</span>
+                <Link href="/memate-software-updates">All Updates</Link>
               </div>
               <div className="softwareWrp">
                 <ul>

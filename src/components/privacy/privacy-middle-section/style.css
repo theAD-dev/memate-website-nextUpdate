@@ -244,6 +244,9 @@ li.kb-list-item.kb-list-item-active:before {
       max-width: 100% !important;
       display: block !important;
   }
+  .kb-left-wrappermm {
+    position: initial;
+}
   .kb-tos-wrapper {
       background: #fff !important;
   }

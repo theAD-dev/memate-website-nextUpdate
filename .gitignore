@@ -19,7 +19,7 @@
 
 # production
 /build
-
+/memateNextJS-Updated.zip
 # misc
 .DS_Store
 *.pem

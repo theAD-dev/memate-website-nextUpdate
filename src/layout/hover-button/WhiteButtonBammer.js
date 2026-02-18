@@ -6,6 +6,7 @@ import './WhiteButtonBammer.css';
 const WhiteButtonBammer = (props) => {
   return (
   <>
+    <div className="nav-btn--get-started">
       <div className="btn-base--tron-radial1">
         <div className="radial-embed-nav1 w-embed">
           <svg
@@ -51,6 +52,7 @@ const WhiteButtonBammer = (props) => {
       </div>
       <div className="btn-base--black2">
         <div className="text-btn--nav2">{props.text}</div>
+      </div>
       </div>
   </>
   );

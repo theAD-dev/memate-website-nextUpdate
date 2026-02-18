@@ -1,3 +1,90 @@
+.mobile-demo-section {
+    background: url("https://res.cloudinary.com/dn0jqjad3/image/upload/v1770965895/3_1_x01xh5.png") !important;
+    justify-content: center;
+    align-items: center;
+    height: 120vh;
+    display: flex;
+    position: relative;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+}
+.phone-frame {
+  position: relative;
+   width: 100%;
+  margin: auto;
+}
+/* .phone-frame:before {
+    content: "";
+    z-index: 9;
+    background: url("https://res.cloudinary.com/dn0jqjad3/image/upload/v1770966534/Vector_qeavrm.png") center / cover no-repeat;
+    width: 698px;
+    height: 330px;
+    position: absolute;
+    bottom: -15px;
+    left: 0;
+} */
+.phone-frame:before {
+    z-index: 9;
+    content: "";
+    filter: blur(7px);
+    background: radial-gradient(#000000 0%, #000000 35%, #00000052 80%);
+    border-radius: 0;
+    width: 100%;
+    height: 142px;
+    position: absolute;
+    bottom: -31px;
+    left: 0;
+}
+
+.frame-image {
+  width: 100%;
+  height: auto;
+  position: relative;
+  z-index: 10;
+}
+.phone-screen {
+    z-index: 5;
+    border-radius: 0;
+    width: 396px;
+    height: 88%;
+    position: absolute;
+    top: 39%;
+    left: 177px;
+    overflow: hidden;
+}
+.scroll-content {
+  display: flex;
+  flex-direction: column;
+  transform: translateY(0px);
+  will-change: transform;
+  transition: transform 0.80s ease-out;
+}
+.screen-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.mobile-demo-section.gridboxstreamline.item2 .frame-image {
+    width: 100% !important;
+    height: auto !important;
+}
+
+.mobile-demo-section.item2 h4 {
+    z-index: 999;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 .common-box-wrapper {
     /* margin-top: 95px; */
     display: flex;
@@ -12,6 +99,62 @@
 .common-box {
   width: 1200px;
   height: 1521px;
+}
+
+.gridboxstreamline {
+  position: relative;
+  overflow: hidden;
+  height: 413px;
+  border-radius: 30px;
+  background: #f7f8fa;
+}
+.bg-scroll {
+  position: absolute;
+  top: 83px;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+}
+.scroll-track {
+  display: flex;
+  width: max-content;
+  animation: infiniteScroll 90s linear infinite;
+}
+.bg-img {
+  width: 180px;
+  height: auto;
+  display: block;
+  flex-shrink: 0;   
+  margin: 0;       
+  padding: 0;      
+}
+@keyframes infiniteScroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+.streamlineimggrid.streamlineimggrid12 img {
+    object-fit: contain;
+    width: auto;
+    height: auto;
+}
+.gridboxstreamline h4 {
+  position: relative;
+  z-index: 2;
+  color: #fff;
+  margin: 0;
+}
+
+@keyframes infiniteScroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
 }
 
 .overcome-pro-content {
@@ -185,8 +328,28 @@ p.card-text {
     letter-spacing: -0.72px;
     font-family: "sequel_sans_roman_head" !important;
 }
-.gridboxstreamline.item2,.gridboxstreamline.item4{
-  padding-left: 12px;
+.countingWrapper {
+    position: absolute;
+    bottom: 112px;
+    left: -55px;
+    right: 0;
+    margin: 0 auto;
+    z-index: 9;
+    width: 192px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 83px;
+}
+
+
+.countingWrapper span span {
+    font-size: 16px;
+    color: #29292b;
+    font-family: 'sequel_sans_semi_bold_disp' !important;
+}
+.gridboxstreamline.item2, .gridboxstreamline.item4 {
+    margin-left: 12px;
 }
 .gridboxstreamline.item1,.gridboxstreamline.item2{
   margin-bottom: 20px;
@@ -434,10 +597,100 @@ p.graph-business {
   top: 135px;
 }
 @media screen and (max-width: 767px) {
-  .gridboxstreamline.item2 h4,.gridboxstreamline.item1 h4, .gridboxstreamline.item3 h4, .gridboxstreamline.item4 h4 {
-    padding: 18px;
-    font-size: 20px;
-    line-height: 25px;
+  .dashboard-wrapper {
+    padding: 0px 1px !important;
+}
+.dashboard-wrapper .top-grid, .dashboard-wrapper .bottom-grid {
+    grid-template-columns: 1fr 1fr !important;
+}
+.dashboard-wrapper .footer-text {
+    font-weight: 360;
+    line-height: 22px;
+    position: relative !important;
+    margin-top: 22px;
+    margin-left: 28px;
+}
+.dashboard-wrapper .blue .stat-number,.dashboard-wrapper .yellow .stat-number,.dashboard-wrapper .pink .stat-number {
+    font-size: 27px !important;
+}
+  .phone-screen {
+    z-index: 5;
+    border-radius: 0;
+    width: 208px;
+    height: 86%;
+    position: absolute;
+    top: 39%;
+    left: 87px;
+    overflow: hidden;
+}
+  .common-box1 {
+    padding: 0 0;
+    display: inline-block;
+    width: 100%;
+}
+.gridboxstreamline.item2, .gridboxstreamline.item4 {
+    padding-top: 0 !important;
+    padding-left: 0!important;
+}
+.shadowLeftline2:before,.shadowRightline2:after ,.shadowLeftline1:before,.shadowRightline1:after{
+   display: none;
+}
+.cardContainer {
+    display: flex;
+    position: sticky;
+    height: auto;
+    width: 97%;
+    margin: 0 auto;
+}
+.gridboxstreamline.item2, .gridboxstreamline.item4 {
+    padding-top: 0;
+    padding-left: 0;
+}
+.countingWrapper {
+    z-index: 9;
+    justify-content: flex-start;
+    align-items: flex-start;
+    column-gap: 46px;
+    width: 71px;
+    margin: 0 auto;
+    display: flex;
+    position: absolute;
+    bottom: 66px;
+    left: -55px;
+    right: 0;
+    row-gap: 0;
+}
+
+.countingWItem h2,.countingWItem h2 span {
+   line-height: 24px;
+    margin: 0;
+    padding: 0;
+    height: auto;
+    font-size: 7px;
+}
+.countingWrapper span span {
+    font-size: 7px;
+}
+.gridboxstreamline {
+    background: #f7f8fa;
+    border-radius: 30px;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+}
+.gridboxstreamline.item2, .gridboxstreamline.item4 {
+    padding-top: 0;
+    padding-left: 0;
+    margin: 11px 0;
+}
+  .gridboxstreamline.item1 {
+    height: 336px;
+}
+
+.gridboxstreamline.item2 h4, .gridboxstreamline.item1 h4, .gridboxstreamline.item3 h4, .gridboxstreamline.item4 h4 {
+    padding: 22px;
+    font-size: 14px;
+    line-height: 15px;
 }
   .gridboxstreamline.item2 h4 br,.gridboxstreamline.item1 h4 br, .gridboxstreamline.item3 h4 br, .gridboxstreamline.item4 h4 br {
    /* display: none; */

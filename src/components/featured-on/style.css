@@ -1,6 +1,11 @@
 .featured-section {
     margin: 0px 0 98px;
 }
+   @media only screen and (min-width: 600px) and (max-width: 1024px) {
+    .featured-section {
+    margin: 37px 0 0;
+}
+   }
 .featured-text p {
     color: #29292B;
     text-align: center;

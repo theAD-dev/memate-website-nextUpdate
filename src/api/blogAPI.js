@@ -22,7 +22,7 @@ export const blogList = async (page, limit, activeCategory) => {
       throw new Error(`HTTP error! Status: ${response.status}`);
     }
     const result = await response.json();
-    console.log("API response blogList:", result);
+    // console.log("API response blogList:", result);
 
     return result;
 
@@ -48,7 +48,7 @@ export const blogSingle = async (slug) => {
   try {
     const response = await fetch(`https://admin.memate.com.au/api/news/${slug}`, requestOptions);
     const result = await response.json();
-    console.log("API response blogSingle:", result);
+    // console.log("API response blogSingle:", result);
 
     return result;
 
@@ -74,7 +74,7 @@ export const getCategories = async () => {
   try {
     const response = await fetch(`https://admin.memate.com.au/api/get-all-news-categories/`, requestOptions);
     const result = await response.json();
-    console.log("API response getCategories:", result);
+    // console.log("API response getCategories:", result);
 
     return result;
 
@@ -98,7 +98,7 @@ export const getCategoriesID = async () => {
   try {
     const response = await fetch(`https://admin.memate.com.au/api/get-all-news-categories/`, requestOptions);
     const result = await response.json();
-    console.log("API response getCategoriesID:", result);
+    // console.log("API response getCategoriesID:", result);
 
     return result;
 
@@ -109,7 +109,7 @@ export const getCategoriesID = async () => {
 };
 ///fetchCategoryPost
 export const fetchCategoryPost = async (postCateId) => {
-  console.log('postCateId: ', postCateId);
+  // console.log('postCateId: ', postCateId);
   const myHeaders = new Headers();
   myHeaders.append("X-Api-Key", "3fa85f64d51b6c8e74313f7c69aef82d");
 
@@ -122,7 +122,7 @@ export const fetchCategoryPost = async (postCateId) => {
   try {
     const response = await fetch(`https://admin.memate.com.au/api/news?category_id=${postCateId}`, requestOptions);
     const result = await response.json();
-    console.log("API RESPONSE fetchCategoryPost -- ",result )
+    // console.log("API RESPONSE fetchCategoryPost -- ",result )
     return result;
   } catch {
 
@@ -133,7 +133,7 @@ export const fetchCategoryPost = async (postCateId) => {
 
 ///fetchCategoryPost
 export const slugTagsPost = async (slug) => {
-  console.log('slugpppppppppppppppp------------: ', slug);
+  // console.log('sdff------------: ', slug);
     const myHeaders = new Headers();
     myHeaders.append("X-Api-Key", "3fa85f64d51b6c8e74313f7c69aef82d");
   
@@ -146,7 +146,7 @@ export const slugTagsPost = async (slug) => {
     try {
       const response = await fetch(`https://admin.memate.com.au/api/news-tag/${slug}`, requestOptions);
       const result = await response.json();
-      console.log("API RESPONSE slugTagsPost -- ",result )
+      // console.log("API RESPONSE slugTagsPost -- ",result )
 
       return result;
     } catch {
@@ -170,7 +170,7 @@ export const blogLatest = async () => {
   try {
     const response = await fetch(`https://admin.memate.com.au/api/get-latest-three-news`, requestOptions);
     const result = await response.json();
-    console.log("API RESPONSE blogLatest -- ",result)
+    // console.log("API RESPONSE blogLatest -- ",result)
 
     return result;
   } catch {

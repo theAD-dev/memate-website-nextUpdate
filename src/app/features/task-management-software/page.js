@@ -1,7 +1,9 @@
 // 'use client';
 
+import TaskManagementPage from "@/page-components/task-management";
+
 // import AppWrapper from '../../../components/AppWrapper';
-import TaskManagementPage from '../../../page-components/task-management';
+
 
 export const metadata = {
   title: 'Task Management App with To Do List Tools | MeMate',

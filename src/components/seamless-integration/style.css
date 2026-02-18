@@ -1,3 +1,110 @@
+.integrationOuter {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.integrationWrapperAni {
+    background: radial-gradient(circle, #2c2c2c, #0f0f0f);
+    border-radius: 28px;
+    justify-content: space-between;
+    align-items: center;
+    gap: 44px;
+    width: 100%;
+    max-width: 1200px;
+    padding: 60px;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+}
+.integrationOuter .side {
+    flex-direction: column;
+    gap: 16px;
+    display: flex;
+}
+
+.integrationOuter .row {
+  display: flex;
+  gap: 24px;
+
+}
+.integrationOuter{
+    margin-top: 100px;
+}
+.integrationOuter .logo-box {
+    background: #fff;
+    border-radius: 18px;
+    justify-content: center;
+    align-items: center;
+    width: 110px;
+    height: 110px;
+    transition: transform .3s, box-shadow .3s;
+    display: flex;
+    box-shadow: 0 10px 28px #00000047;
+     z-index: 1;
+}
+
+.integrationOuter .logo-box:hover {
+  transform: translateY(-4px) scale(1.05);
+  box-shadow: 0 0 22px rgba(245,179,92,0.9);
+}
+.integrationOuter .center-box {
+  width: 236px;
+  height: 236px;
+  background: #fff;
+  border-radius: 36px;
+  border: 3px solid #f5b35c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 60px rgba(245,179,92,0.85);
+  flex-shrink: 0;
+  z-index: 1;
+}
+
+.integrationOuter .svg-lines {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.integrationOuter .connector {
+  stroke: rgba(233,235,240,0.75);
+  stroke-width: 2;
+  stroke-dasharray: 8 6;
+}
+
+.integrationOuter img {
+  object-fit: contain;
+}
+
+
+@media (max-width: 900px) {
+  .integrationWrapperAni {
+    flex-direction: column;
+    padding: 40px;
+    gap: 40px;
+  }
+.integrationOuter .svg-lines {
+   display: none;
+}
+.integrationOuter .side {
+    flex-direction: row;
+    gap: 20px;
+    display: grid;
+}
+.integrationOuter {
+    padding: 11px;
+}
+  .integrationOuter .center-box {   
+    height: 240px;
+  }
+}
+
+
 
 @media only screen and (min-width: 600px) and (max-width: 1024px) {
 .integration-brand-container {

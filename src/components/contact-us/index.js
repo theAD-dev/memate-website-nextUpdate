@@ -7,7 +7,8 @@ import 'react-phone-number-input/style.css';
 import Link from 'next/link';
 // import TronButton from "../../layout/hover-button/tourn-but";
 import CallbackNow from "./callbacknow";
-import EmailNow from "./emailnow";
+import EmailNow from "./emailnow";  
+import ChatButton from "./ChatButton";  
 import TronRequestADemo from "../../layout/hover-button/TronRequestADemo";
 import WhiteButtonBammer from "../../layout/hover-button/WhiteButtonBammer";
 
@@ -96,7 +97,8 @@ const ContactUsComponent = () => {
               </div>
             </div>
             <div className='query-button'>
-                <button>Chat now</button>
+                {/* <button>Chat now</button> */}
+                <ChatButton />
             </div>
           </div>
           <div className='query-card query-3 '>
@@ -110,7 +112,7 @@ const ContactUsComponent = () => {
                 
               </div>
             </div>
-              <EmailNow />
+              <EmailNow buttonText="Email now" headingText="Email now" />
           </div>
         </div>
         <div className="small-heading">

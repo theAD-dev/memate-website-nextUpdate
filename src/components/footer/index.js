@@ -38,7 +38,7 @@ const Footer = () => {
             <div className="footer-icons">
               <div><Link href="https://www.facebook.com/mematesoftware/" target="_blank"><img src={FacebookIcon} alt="FacebookIcon"/></Link></div>
               <div><Link href="https://www.instagram.com/memateapp/" target="_blank"><img src={InstagramIcon} alt="InstagramIcon" /></Link></div>
-              <div><Link href="https://www.linkedin.com/uas/login?session_redirect=%2Fcompany%2F78408530" target="_blank"><img src={LinkdinIcon} alt="LinkdinIcon" /></Link></div>
+              <div><Link href="https://www.linkedin.com/company/mematesoftware/" target="_blank"><img src={LinkdinIcon} alt="LinkdinIcon" /></Link></div>
             </div>
           </div>
           <div className="download-section">
@@ -75,7 +75,7 @@ const Footer = () => {
               <div className="page-links">
                 <Link href="/">Home</Link>
                 <Link href="/about">About</Link>
-                <Link href="https://www.linkedin.com/uas/login?session_redirect=%2Fcompany%2F78408530" target="_blank">Carreers</Link>
+                <Link href="https://www.linkedin.com/company/mematesoftware/" target="_blank">Carreers</Link>
               </div>
             </div>
 
@@ -110,9 +110,11 @@ const Footer = () => {
                <Link href="/knowledge-base">Knowledge Base</Link>
                 <Link href="/customer-stories">Customer Stories</Link>
                 <Link href="/supplier-database">Supplier Database</Link>
+                <Link href="/subprocessors">Subprocessors</Link>
                 <Link href="/brand">Brand</Link>
                 <Link href="/sitemap">Sitemap</Link>
                 <Link href="https://app.memate.com.au/requestdemo" target="_blank">Request a Demo</Link>
+                <Link href="/partner-program">Affiliate Program</Link>
                 <Link href="https://app.memate.com.au/onboarding" target="_blank">My Account</Link>
               </div>
             </div>
@@ -133,6 +135,7 @@ const Footer = () => {
               <p className="link-heading">Compare</p>
               <div className="page-links" style={{width: "149px"}}>
               <Link href="/compare/memate-vs-quickbooks">MeMate vs QuickBooks</Link>
+              {/* <Link href="/legalvision">Run Your Business</Link> */}
               <Link href="/">MeMate vs Myob</Link>
               <Link href="/compare/memate-vs-jira">MeMate Vs Jira</Link>
               <Link href="/">MeMate vs Monday</Link>
@@ -179,7 +182,7 @@ const Footer = () => {
             <div className="copyright-links">
               <LazyLoadImage
                 alt="contact MeMate"
-                src="https://res.cloudinary.com/dn0jqjad3/image/upload/v1747717590/Powered-By_logo-stack_CMYK_ew121c.webp"
+                src="https://memate-website.s3.ap-southeast-2.amazonaws.com/brand/Powered-By_logo-stack_CMYK_ew121c.webp"
                 effect="blur" 
               />
               </div>
@@ -190,6 +193,7 @@ const Footer = () => {
         </div>
       </div>
     </div>
+    
     </>
   );
 };

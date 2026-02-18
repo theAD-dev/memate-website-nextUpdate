@@ -3,13 +3,7 @@ import "./style.css";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 const CRMSalesTool = () => {
   return (
-    <div className="sales-management-wrapper-dataF" data-aos="fade-up"
-    data-aos-offset="50"
-    data-aos-delay="50"
-    data-aos-duration="1500"
-    data-aos-mirror="true"
-    data-aos-once="false"
-    data-aos-anchor-placement="top-bottom">
+    <div className="sales-management-wrapper-dataF">
       <div className="content-wrapperF">
         <p className="sale-titleF">Organised </p>
         <p className="sales-heading-salesF">Claims</p>

@@ -1443,11 +1443,11 @@ h1.smart-investment-banner {
   font-family: sequel_sans_roman_head !important;
 }
 .bgshadowwrapper {
-  background: url(https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/slider/pshadow-min.webp);
-  background-attachment: fixed;
+  /* background: url(https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/slider/pshadow-min.webp); */
+  /* background-attachment: fixed;
   background-position: bottom;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover; */
   padding-bottom: 30px;
 }
 

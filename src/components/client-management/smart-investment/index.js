@@ -1,5 +1,5 @@
 import "./style.css";
-import PricingTable from "../../pricing/dark-pricing-table";
+import PricingTableDemo from "./PricingTableDemo";
 import Link from "next/link";
 import TronRequestADemo from "../../../layout/hover-button/TronRequestADemo";
 import WhiteButtonBammer from "../../../layout/hover-button/WhiteButtonBammer";
@@ -40,7 +40,7 @@ const SmartInvestment = () => {
                   </Link>
                 </div>
           </div>
-     <PricingTable />
+     <PricingTableDemo />
     </div>
   );
 };

@@ -20,6 +20,7 @@ const RequestToEdit = ({ supplierData }) => {
   const [industryOptions, setIndustryOptions] = useState([]);
   const [servicesOptions, setServicesOptions] = useState([]);
   const [error, setError] = useState("");
+  const [captchaValue, setCaptchaValue] = useState(null);
   const [upload_file, setUploadFile] = useState(null);
   const {
     control,
@@ -114,7 +115,13 @@ const RequestToEdit = ({ supplierData }) => {
 
 
   const onSubmit = async (data) => {
-    
+    const token = (typeof window !== 'undefined' && typeof grecaptcha !== 'undefined')
+      ? grecaptcha.getResponse()
+      : (captchaValue || '');
+    if (!token) {
+      setError("Please complete the CAPTCHA.");
+      return;
+    }
     const requestData = {
       supplier_id: supplierData?.supplier_id || supplierData?.id,
       cname: data.cname,
@@ -133,6 +140,7 @@ const RequestToEdit = ({ supplierData }) => {
         .map((s) => s.value)
         .join(","),
          logo: upload_file,
+      token,
     };
 console.log('requestData: ', requestData);
     try {
@@ -464,7 +472,7 @@ console.log('requestData: ', requestData);
 
               <div className="marginbotton">
                 <ReCAPTCHA
-              sitekey="6LfAwdMqAAAAAFtI7SUPXKb1ew7C0jUYRvxDqjpS"
+              sitekey={process.env.MAIL_SITE_KEY}
               onChange={(value) => console.log("Captcha:", value)}
             />
                 {error && <p style={{ color: "red" }}>{error}</p>}

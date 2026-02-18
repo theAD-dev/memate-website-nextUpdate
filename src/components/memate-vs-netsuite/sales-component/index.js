@@ -17,9 +17,9 @@ const SalesComponent = () => {
      
         <div className="compaire-service01">
         <img
-            srcSet={`${'https://res.cloudinary.com/dn0jqjad3/image/upload/v1746535254/servicem8-3x_avrxqe.png'} 1800w, ${'https://res.cloudinary.com/dn0jqjad3/image/upload/v1746535254/servicem8-2x_jpqla6.png'} 1200w, ${'https://res.cloudinary.com/dn0jqjad3/image/upload/v1746535254/servicem8-1x_g4d12q.png'} 600w`}
+            srcSet={`${'https://memate-website.s3.ap-southeast-2.amazonaws.com/brand/servicem8-3x_avrxqe.png'} 1800w, ${'https://memate-website.s3.ap-southeast-2.amazonaws.com/brand/servicem8-2x_jpqla6.png'} 1200w, ${'https://memate-website.s3.ap-southeast-2.amazonaws.com/brand/servicem8-1x_g4d12q.png'} 600w`}
             sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 25vw"
-            src={'https://res.cloudinary.com/dn0jqjad3/image/upload/v1746535254/servicem8-3x_avrxqe.png'}
+            src={'https://memate-website.s3.ap-southeast-2.amazonaws.com/brand/servicem8-3x_avrxqe.png'}
             alt="Pricing main image"
 
           />

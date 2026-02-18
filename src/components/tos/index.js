@@ -34,7 +34,7 @@ These terms cover your legal rights and obligations, so please read them careful
 Should you have any questions or comments after reading, please reach out to us via meMate Central. We’re here to help and look forward to assisting you.
 </p>
     <p className='paraTextTos'>
-Last updated on 31 July 2024. We’ve updated these terms to ensure greater clarity and transparency and to better align with our business practices. The updates also include specific requirements for subscribers in our partner program, designed to ensure their clients have appropriate subscription access rights.
+Last updated on 31 July 2024. We’ve updated these terms to ensure greater clarity and transparency and to better align with our business practices. The updates also include specific requirements for subscribers in our legalvision program, designed to ensure their clients have appropriate subscription access rights.
 </p>
     `,
     children: [],
@@ -82,9 +82,9 @@ Check out information about user roles and levels of access on meMate.
       </p>
       </li>
       <li>
-      <strong className='sqsSBHFont'>Partner Program</strong>
+      <strong className='sqsSBHFont'>legalvision Program</strong>
       <p className='paraTextTos '>
-If you participate in our partner program, read our additional partner terms.
+If you participate in our legalvision program, read our additional legalvision terms.
       </p>
       </li>
       <li>
@@ -110,7 +110,7 @@ or – if you’re an invited user – until your access is revoked.
      <ul className='listMargin' type='disc'>
       <li className='paraTextTos '>You can transfer a subscription.</li>
       <li className='paraTextTos '>You control access to a subscription. You decide who’s invited to use our services you’ve subscribed to and what kind of access the invited user has. You can change or stop that access at any time.</li>
-      <li className='paraTextTos '>You’re responsible for resolving any disputes with any invited users over access to your subscription. You can find out more about disputes over access on meMate Central. If you participate in our partner program and act as the subscriber on behalf of your client, we may reasonably direct you to provide your client with read-only access to the subscription in accordance with the additional partner terms.</li>
+      <li className='paraTextTos '>You’re responsible for resolving any disputes with any invited users over access to your subscription. You can find out more about disputes over access on meMate Central. If you participate in our legalvision program and act as the subscriber on behalf of your client, we may reasonably direct you to provide your client with read-only access to the subscription in accordance with the additional legalvision terms.</li>
       <li className='paraTextTos '>You’re responsible for all your invited users’ activity.</li>
      </ul>
       </p>
@@ -173,7 +173,7 @@ or – if you’re an invited user – until your access is revoked.
       <li>
         <strong className='sqsSBHFont'>Use of Data</strong>
         <p className='paraTextTos '>In order to continue accessing our services, you need to make timely payments based on the pricing plan you selected. To avoid delayed or missed payments, please make sure we have accurate payment information. If we don’t receive timely payments, we may suspend access to your subscription until the payment is made.</p>
-        <p className='paraTextTos '>When you enter or upload your data into our services, we don’t own that data but you grant us a license to use, copy, transmit, store, analyse, and back up all data you submit to us through our services, including personal data of yourself and others, to: enable you to use our services; allow us to improve, develop and protect our services; create new services; communicate with you about your subscription; send you information we think may be of interest to you based on your marketing preferences; and disclose to third party service providers and partners to enable and support such purposes.</p>
+        <p className='paraTextTos '>When you enter or upload your data into our services, we don’t own that data but you grant us a license to use, copy, transmit, store, analyse, and back up all data you submit to us through our services, including personal data of yourself and others, to: enable you to use our services; allow us to improve, develop and protect our services; create new services; communicate with you about your subscription; send you information we think may be of interest to you based on your marketing preferences; and disclose to third party service providers and legalvisions to enable and support such purposes.</p>
       </li>
       <li>
         <strong className='sqsSBHFont'>Use of Your Own Personal Data</strong>
@@ -213,7 +213,7 @@ or – if you’re an invited user – until your access is revoked.
       </li>
       <li>
         <strong className='sqsSBHFont'>Apps and Third-Party Products</strong>
-        <p className='paraTextTos '>To help make your meMate experience even better, the meMate ecosystem includes apps and other products and services made available by trusted partners through the meMate App Store.</p>
+        <p className='paraTextTos '>To help make your meMate experience even better, the meMate ecosystem includes apps and other products and services made available by trusted legalvisions through the meMate App Store.</p>
       </li>
       <li>
         <strong className='sqsSBHFont'>Other Services</strong>
@@ -402,14 +402,14 @@ The terms of the United Nations Convention on Contracts for the Sale of Goods an
 <li>
 <strong className='sqsSBHFont'>Blocking Your Access, Disabling Your Subscription, or Refusing to Process a Payment</strong>
 <p className='paraTextTos'>
- As our sites are global, different laws may apply in different countries that restrict our relationship with you. We may block your access, terminate your subscription, or refuse to process a payment if we reasonably believe there’s a risk - like a potential breach of a law or regulation - associated with you, your company, your subscription, or a payment. Examples of where we might do this include transactions where the payment is from a sanctioned person or country; or where we reasonably believe there is a legal or regulatory risk or a risk of loss being suffered by us or our customers or partners. You promise that you’re not located in a sanctioned country and are not on a sanctioned persons list. We may also block users from a country if we can’t receive payments from that country. You should check what payment methods are available in your country for making payments. We may take any of these actions without notice.
+ As our sites are global, different laws may apply in different countries that restrict our relationship with you. We may block your access, terminate your subscription, or refuse to process a payment if we reasonably believe there’s a risk - like a potential breach of a law or regulation - associated with you, your company, your subscription, or a payment. Examples of where we might do this include transactions where the payment is from a sanctioned person or country; or where we reasonably believe there is a legal or regulatory risk or a risk of loss being suffered by us or our customers or legalvisions. You promise that you’re not located in a sanctioned country and are not on a sanctioned persons list. We may also block users from a country if we can’t receive payments from that country. You should check what payment methods are available in your country for making payments. We may take any of these actions without notice.
 </p>
 
 </li>
 <li>
 <strong className='sqsSBHFont'>Relationship Between the Parties</strong>
 <p className='paraTextTos'>
-Nothing in these terms is to be construed as constituting a partnership, joint venture, employment or agency relationship between you and us, or between you and any other subscriber or invited user.
+Nothing in these terms is to be construed as constituting a legalvisionship, joint venture, employment or agency relationship between you and us, or between you and any other subscriber or invited user.
  </p>
 
 </li>

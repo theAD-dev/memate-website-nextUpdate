@@ -1,5 +1,34 @@
-@media screen and (max-width: 767px) {
 
+
+@media screen and (max-width: 767px) {
+    .cardContainer12 {
+    height: auto !important;
+}
+.cardContainer12 p {
+    padding: 0 20px;
+}
+.integrationOuter .row {
+    gap: 10px !important;
+}
+.integrationOuter .center-box {
+    height: 212px !important;
+}
+.integrationOuter {
+    margin-top: 0 !important;
+}
+.cardContainer .card {
+    transform-origin: top;
+    border-radius: 25px;
+    flex-direction: column;
+    width: 90%!important;
+    height: auto!important;
+    padding: 20px!important;
+    display: flex!important;
+    position: relative!important;
+    box-shadow: 0 0 0px #0000000f !important;
+    background: transparent !important;
+    top: calc(20px - 0vh) !important;
+}
     .bgContentWrap{
         &.flexboxWrap{
             display: block;

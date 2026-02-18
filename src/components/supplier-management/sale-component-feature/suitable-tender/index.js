@@ -7,13 +7,15 @@ const SuitableTender = () => {
  
 
   return (
-    <div className="sales-management-wrapper-dataF" data-aos="fade-up"
-    data-aos-offset="50"
-    data-aos-delay="50"
-    data-aos-duration="3300"
-    data-aos-mirror="true"
-    data-aos-once="false"
-    data-aos-anchor-placement="top-bottom">
+    <div className="sales-management-wrapper-dataF" 
+    // data-aos="fade-up"
+    // data-aos-offset="50"
+    // data-aos-delay="50"
+    // data-aos-duration="3300"
+    // data-aos-mirror="true"
+    // data-aos-once="false"
+    // data-aos-anchor-placement="top-bottom"
+    >
       <div className="content-wrapperF ">
         <p className="sale-titleF">Convenient</p>
         <p className="sales-heading-salesF">Supplier</p>

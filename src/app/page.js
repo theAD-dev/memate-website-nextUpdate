@@ -4,11 +4,11 @@ import AppWrapper from '../components/AppWrapper';
 import LandingPage from '../page-components/landing-page';
 
 export const metadata = {
-  title: 'Best Business Management Software, ERP & CRM Tools | MeMate',
-  description: 'MeMate offers all-in-one cloud-based business management software for Australian SMEs, with ERP, CRM, and project management tools for smarter business growth.',
+  title: 'All-in-One Company & Business Management Software | MeMate',
+  description: 'Run your business smarter with MeMate—an all-in-one business management software built for small teams. Manage operations, workflows, and growth in one place.',
   openGraph: {
-    title: 'Best Business Management Software, ERP & CRM Tools | MeMate',
-    description: 'MeMate offers all-in-one cloud-based business management software for Australian SMEs, with ERP, CRM, and project management tools for smarter business growth.',
+    title: 'All-in-One Company & Business Management Software | MeMate',
+    description: 'Run your business smarter with MeMate—an all-in-one business management software built for small teams. Manage operations, workflows, and growth in one place.',
   },
 }
 

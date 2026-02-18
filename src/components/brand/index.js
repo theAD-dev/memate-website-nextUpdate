@@ -22,7 +22,7 @@ const BrandComponent = () => {
       </h2>
       <h1 className="heading-text-blog">MeMate Brand Assets & Media Kit</h1>
       </div>
-      <MiddleSection />
+      <MiddleSection /> 
       <div>
 
       </div>

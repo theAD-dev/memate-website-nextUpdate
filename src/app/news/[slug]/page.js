@@ -7,15 +7,15 @@ export async function generateMetadata({ params }) {
   try {
     const resolvedParams = await params;
     const slug = resolvedParams.slug;
-    
-    console.log('🔍 Generating metadata for slug:', slug);
+
+    // console.log('🔍 Generating metadata for slug:', slug);
     
     const post = await blogSingle(slug);
     
-    console.log('📡 API response:', post ? 'Found post' : 'No post found');
+    // console.log('📡 API response:', post ? 'Found post' : 'No post found');
     
     if (!post || post.error) {
-      console.log('❌ Post not found, using fallback metadata');
+      // console.log('❌ Post not found, using fallback metadata');
       const fallbackMetadata = {
         title: 'News Article Not Found | MeMate',
         description: 'The requested news article could not be found.',
@@ -77,12 +77,12 @@ export async function generateMetadata({ params }) {
     // Ensure title isn't too long for social media
     const socialTitle = title.length > 60 ? title.substring(0, 57) + '...' : title;
     
-    console.log('✅ Generated metadata:', {
-      title: socialTitle,
-      description: cleanDescription.substring(0, 50) + '...',
-      imageUrl,
-      postUrl
-    });
+    // console.log('✅ Generated metadata:', {
+    //   title: socialTitle,
+    //   description: cleanDescription.substring(0, 50) + '...',
+    //   imageUrl,
+    //   postUrl
+    // });
     
     const metadata = {
       title,

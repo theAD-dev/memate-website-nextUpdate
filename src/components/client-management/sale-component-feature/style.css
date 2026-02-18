@@ -3,7 +3,7 @@
   align-items: center;
   justify-content: center;
   width: 100%;
-  margin-top: 70px;
+  margin-top: 100px;
   flex-direction: column;
 }
 
@@ -63,3 +63,14 @@
 }
 }
 
+.gradient-svg{
+  position: relative;
+}
+.left{
+  position: absolute;
+  left: 0px;
+}
+.right{
+  position: absolute;
+  right: 0px;
+}

@@ -5,7 +5,7 @@ const NewsStoriesPage = () => {
   return (
     <Layout>
         <NewsStoriesComponent/>
-    </Layout>
+    </Layout> 
   )
 }
 

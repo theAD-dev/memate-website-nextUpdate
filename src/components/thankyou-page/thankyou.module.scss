@@ -13,6 +13,10 @@
             background: linear-gradient(to right, #1ab2ff 10.15%, #ffb258 69%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
+           @media screen and (max-width: 767px) {
+       font-size: 100px;
+       line-height: 105px;
+           }
         }
         .images{
             position: absolute;

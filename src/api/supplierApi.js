@@ -201,6 +201,7 @@ export const RequestToEditData = async (data) => {
   formData.append("description", data.description || "");
   formData.append("supplier_industries_id", data.supplier_industries_id || "");
   formData.append("logo", data.logo || "");
+  formData.append("token", data.token || "");
 
 
   // Services: convert array to CSV

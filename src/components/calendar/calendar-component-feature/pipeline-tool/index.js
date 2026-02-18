@@ -3,13 +3,7 @@ import "./style.css";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 const PipeLineTool = () => {
   return (
-    <div className="sales-management-wrapper-dataF flextMobile" data-aos="fade-up"
-    data-aos-offset="50"
-    data-aos-delay="50"
-    data-aos-duration="2000"
-    data-aos-mirror="true"
-    data-aos-once="false"
-    data-aos-anchor-placement="top-bottom">
+    <div className="sales-management-wrapper-dataF flextMobile">
       <div className="sales-imageF">
         <LazyLoadImage
             alt="staff and job tracking by location"

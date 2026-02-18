@@ -141,6 +141,7 @@ const SitemapComponent = () => {
         <div className={style.sitemapGrid}>
         <div className={style.sitemapGridItem}>
             <Link href="/compare/memate-vs-quickbooks">MeMate vs QuickBooks</Link>
+            {/* <Link href="/legalvision">Run Your Business</Link> */}
             <Link href="#">MeMate vs Myob</Link>
             <Link href="/compare/memate-vs-jira">MeMate Vs Jira</Link>
             <Link href="#">MeMate vs Monday</Link>

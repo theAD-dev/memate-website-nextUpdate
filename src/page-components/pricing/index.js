@@ -11,7 +11,7 @@ const PricingPage = () => {
     <Layout>
      <div className="bgshadowwrapper">
         <PricingComponent/>
-      </div>
+      </div> 
     </Layout>
     </AppWrapper>
   )

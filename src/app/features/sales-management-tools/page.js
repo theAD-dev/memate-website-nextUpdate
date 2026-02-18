@@ -1,7 +1,7 @@
 // 'use client';
 
 // import AppWrapper from '../../../components/AppWrapper';
-import FeaturePage from '../../../page-components/feature-page';
+import FeaturePage from '../../../page-components/feature-page'; 
 
 export const metadata = {
   title: 'Sales Management Software for Australian Business | MeMate',

@@ -2,17 +2,17 @@
 .question-answer-heading-wrapperF p {
     color: #29292B;
     text-align: center;
-    font-size: 72px;
+    font-size: 60px;
     font-style: normal;
     font-weight: 420;
-    line-height: 80px;
+    line-height: 60px;
     letter-spacing: -2.16px;
     font-family: 'sequel_sans_semi_bold_disp' !important;
 }
 .question-answer-ques-infoF {
     width: 100%;
     color: #29292B;
-    font-size: 24px;
+    font-size: 22px;
     font-style: normal;
     font-weight: 370;
     line-height: 32px;
@@ -33,15 +33,6 @@
 .question-answer-ans-infoF {
     padding: 12px 0 0;
 }
-
-
-
-
-
-
-
-
-
 
 
 .question-answer-wrapper {

@@ -160,7 +160,9 @@ export function middleware(request) {
     '/author/devthead-com-au/feed/': '/news',
     '/client-management': '/features/client-management-software',
     '/construction': '/industries/business-software-for-construction-industry',
-    '/news/page/7/': '/news'
+    '/news/page/7/': '/news',   
+    '/news/australias-business-owners/': '/news',   
+ 
   };
 
   // Query parameter redirects

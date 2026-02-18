@@ -8,7 +8,30 @@
   padding: 80px 0;
   background: #f8f9fa;
 }
-
+.ArticleHome .section-header h2 {
+    font-weight: 415;
+    font-size: 48px;
+    line-height: 60px;
+    letter-spacing: -1.44px;
+    text-align: center;
+    font-family: 'sequel_sans' !important;
+    color: rgba(41, 41, 43, 1);
+}
+.ArticleHome .section-header {
+    text-align: center;
+}
+.ArticleHome .section-header p {
+    letter-spacing: -.72px;
+    text-align: center;
+    color: #888e9e;
+    margin: 0;
+    font-size: 24px;
+    font-weight: 360;
+    line-height: 32px;
+    display: inline-block;
+    font-family: 'sequel_sans_roman_head' !important;
+    max-width: 100%;
+}
 .sliderSectionShadowl {
   background: url(https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/newsshadow.png) no-repeat;
   background-size: contain;
@@ -68,11 +91,13 @@
 }
 
 .NewsflexWrap .itemHead {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 44px;
-  margin-top: 30px;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 44px;
+    display: flex;
+    border-bottom: 1px solid var(--Gray-200, rgba(234, 236, 240, 1));
+    padding-bottom: 16px;
 }
 
 /* changed */
@@ -82,21 +107,20 @@
   font-style: normal;
   font-weight: 100;
   line-height: normal;
-  letter-spacing: -1px;
-  font-family: 'sequel_sans_semi_bold_disp' !important;
+  font-family: 'sequel_sans_roman_disp' !important;
 }
 
 .NewsflexWrap .itemHead a {
-  color: var(--Primary-500, #1AB2FF);
-  text-align: center;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 415;
-  line-height: normal;
-  text-decoration: none;
-  font-family: 'sequel_sans';
+    color: var(--Primary-500, #1ab2ff);
+    text-align: center;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 415;
+    line-height: normal;
+    text-decoration: none;
+    font-family: 'sequel_sans_roman_head' !important;
+    letter-spacing: -0.48px;
 }
-
 .NewsflexWrap .Newsitem .imgBox a img {
   width: 100%;
   border-radius: 10px;
@@ -107,7 +131,9 @@
 .NewsflexWrap .Newsitem .imgBox {
   width: 164px;
 }
-
+.pageBreadcrumbs li:last-child a, .pageBreadcrumbs li:first-child a {
+    color: #106b99;
+}
 .NewsflexWrap .Newsitem li {
   align-items: baseline;
   text-align: left;
@@ -117,7 +143,7 @@
   gap: 15px;
   align-items: flex-start;
   margin-bottom: 40px;
-  justify-items: center;
+  justify-items: flex-start;
 }
 
 /* changed */
@@ -129,22 +155,19 @@
   line-height: 140%;
   font-family: 'sequel_sans_roman_head' !important;
 }
-
 .NewsflexWrap .textBox .postH2Title a {
-  color: #29292B;
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  text-align: left;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 3;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  font-family: 'sequel_sans';
+    color: #29292b;
+    text-align: left;
+    font-family: 'sequel_sans_roman_head' !important;
+    -webkit-line-clamp: 3;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    font-weight: 360;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: -0.72px;
 }
-
 .softwareWrp ul li {
   display: block !important;
   place-items: start !important;
@@ -170,28 +193,36 @@
 }
 
 .softwareWrp li h3 {
-  color: #29292B;
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 100;
-  line-height: normal;
-  font-family: 'sequel_sans';
+   color: #29292b;
+    text-align: left;
+    font-family: 'sequel_sans_roman_head' !important;
+    -webkit-line-clamp: 3;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    font-weight: 360;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: -0.72px;
 }
 
 .softwareWrp li span {
-  color: #888E9E;
-  font-size: 12px;
-  font-style: normal;
-  font-weight: 360;
-  line-height: 140%;
-  font-family: 'sequel_sans_roman_head';
+    color: #888e9e;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 100;
+    line-height: 140%;
+    font-family: 'sequel_sans_roman_head' !important;
 }
 
 @media screen and (max-width: 767px) {
   .NewsflexWrap .textBox .postH2Title a {
     font-size: 18px;
   }
-
+.ArticleHome .section-header p {
+    font-size: 20px !important;
+    line-height: 26px !important;
+}
   .sliderSection1News {
     padding: 0 15px 17px;
   }

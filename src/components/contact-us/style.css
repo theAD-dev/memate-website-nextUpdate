@@ -419,6 +419,16 @@ input:focus-visible {
         width: 100%;
         height: auto;
     }
+    .requestCallback, .requestCallback h1 {
+    color: #29292b;
+    text-align: center;
+    letter-spacing: 0;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 415;
+    line-height: 30px;
+    font-family: sequel_sans !important;
+}
     .small-heading p.ContactSubText {
     font-size: 20px;
     line-height: 28px;

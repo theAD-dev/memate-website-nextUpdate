@@ -130,7 +130,7 @@ const article =  {
               <h3>We also leverage meMate’s work feature to manage our subcontractors.</h3>
               <p>It provides a clear, consolidated view of project expenses, making it easy to keep everything in check and visible in one window. This level of transparency is crucial for maintaining control over project costs and ensuring that everything runs smoothly.</p>
             <p>The recurring projects feature has been a blessing for our routine visits and service jobs. We can easily schedule these recurring tasks just once, and meMate takes care of the rest, ensuring that everything happens like clockwork.</p>
-            <p>The team at meMate has done a fantastic job in developing this software. We are thrilled with the results and are happy to provide continuous feedback for improvements. Your commitment to listening to our needs and refining the software has made a significant difference in how we operate, and we look forward to continuing this partnership.</p>
+            <p>The team at meMate has done a fantastic job in developing this software. We are thrilled with the results and are happy to provide continuous feedback for improvements. Your commitment to listening to our needs and refining the software has made a significant difference in how we operate, and we look forward to continuing this legalvisionship.</p>
             
             </div>
 
@@ -144,7 +144,7 @@ const article =  {
             </div>
             <div className="wrapperText">
               <h3>The team at meMate has done a fantastic job in developing this software. </h3>
-              <p>We are thrilled with the results and are happy to provide continuous feedback for improvements. Your commitment to listening to our needs and refining the software has made a significant difference in how we operate, and we look forward to continuing this partnership.</p>
+              <p>We are thrilled with the results and are happy to provide continuous feedback for improvements. Your commitment to listening to our needs and refining the software has made a significant difference in how we operate, and we look forward to continuing this legalvisionship.</p>
              </div>
           </div>
           <div className="ccStories">

@@ -4,13 +4,7 @@ import './style.css';
 import { LazyLoadImage } from "react-lazy-load-image-component";
 const MeMateFeatureAgile = () => {
   return (
-    <div className="agile-container-section mainOperationRight"  data-aos="fade-up"
-    data-aos-offset="50"
-    data-aos-delay="50"
-    data-aos-duration="1600"
-    data-aos-mirror="true"
-    data-aos-once="false"
-    data-aos-anchor-placement="top-bottom">
+    <div className="agile-container-section mainOperationRight">
       <div className="efficiency-section">
         <FeatureCard
           subHeading="Agile"

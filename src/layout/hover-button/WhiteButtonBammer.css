@@ -207,7 +207,7 @@
     height: auto;
     margin: -1px 0;
     position: relative;
-    z-index: -9;
+    z-index: 0;
   }
   
   
@@ -408,6 +408,7 @@
     position: absolute;
     inset: -2px 0% 0% -1.5px;
     overflow: hidden;
+    pointer-events: none;
 }
 /* .btn-base--black2:hover{
     border: linear-gradient(to right, #1ab2ff 33.15%, #ffb258 62%) !important;
@@ -630,4 +631,5 @@
     position: absolute;
     inset: -2px 0% 0% -1.5px;
     overflow: hidden;
+    pointer-events: none;
 }

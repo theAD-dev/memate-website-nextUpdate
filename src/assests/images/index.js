@@ -76,6 +76,8 @@ const Images = {
   landingHeroitem3x: "https://memate-website.s3.ap-southeast-2.amazonaws.com/media/Metric+item.png",
   landingHeroiPhone: "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/slider/iphone16pro-min.png",
   logo: "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/logo.svg",
+  logo1: "https://memate-website.s3.ap-southeast-2.amazonaws.com/19-11-2025/landing-logo-memate.png",
+  logo3: "https://memate-website.s3.ap-southeast-2.amazonaws.com/19-11-2025/landing-logo-grandhelp.png",
   BurgerIcon: "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/burger-menu-svgrepo-com.svg",
   burgerCloseIcon: "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/burger-close-icon-w.svg",
   macLeptop: "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/mackook-image.svg",

@@ -4,9 +4,9 @@ import {
   QuestionAnswer,
   SalesComponent,
   SalesComponentFeature,
-  SmartInvestment
 } from "../../components/memate-vs-netsuite";
 import AppWrapper from "../../components/AppWrapper";
+import PricingModelCommon from "@/components/pricingmodelcommon";
 // import { Helmet } from "react-helmet-async";
 const ServicesNetsuitePage = () => {
   return (
@@ -16,7 +16,7 @@ const ServicesNetsuitePage = () => {
       <div className="bgshadowwrapper">
       <SalesComponent />
       <SalesComponentFeature />
-      <SmartInvestment />
+       <PricingModelCommon />
       <QuestionAnswer />
       </div>
     </Layout>

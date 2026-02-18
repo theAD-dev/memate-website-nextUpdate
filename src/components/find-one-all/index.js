@@ -14,7 +14,7 @@ const FindOneApplication = () => {
           <h3>One application</h3>
         </div>
         <div className="to-replace-bold-text">
-          <span className="replace-text replace-text-fonts gradientAnimenate">
+          <span className="replace-text-fonts smokeyGradient ">
             to replace them all
           </span><br></br>
           {/* <span className="replace-text gradientAnimenate">

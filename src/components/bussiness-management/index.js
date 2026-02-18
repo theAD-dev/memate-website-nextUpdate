@@ -15,7 +15,7 @@ const BussinessManagement = () => {
           <div className="home-platform">
             <h1>All-in-One Business Management Software Platform</h1>
           </div>
-          <div className="gradientHeading gradiientColor header-text">
+          <div className="gradientHeading  header-text smokeyGradient">
             to run your business
           </div>
         </div>
@@ -24,14 +24,14 @@ const BussinessManagement = () => {
           <div className="macBook-image">
             <div className="big-img-mac">
               <div className="big-img-macMain">
-                <Image
-                  alt="Business Management Software"
-                  src={Images.landingHero}
-                  width="1200"
-                  height="600"
-                  style={{ width: "100%", height: "auto" }}
-                  loading="eager"
-                />
+                  <Image
+                    alt="Business Management Software"
+                    src={Images.landingHero}                           
+                    priority                      
+                    fetchPriority="high"         
+                    placeholder="empty"         
+                    width={1200} height={600} sizes="100vw" style={{ width: "100%", height: "auto" }}
+                  />
               </div>
             </div>
           </div>

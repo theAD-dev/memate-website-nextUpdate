@@ -1,12 +1,14 @@
 import React, { useEffect, useRef } from "react";
 import Header from "../components/header";
+import HeaderRunYourBusiness from "../components/header2";
+import HeaderNewBusiness  from "../components/header3";
 import Footer from "../components/footer";
 import "./style.css";
 import "../App.css";
 import NextStep from "../components/next-step";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { usePathname } from 'next/navigation';
+import { usePathname } from "next/navigation";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -15,7 +17,9 @@ const Layout = ({ children }) => {
   const buttonRef = useRef(null);
   const intervalRef = useRef(null);
   const pathname = usePathname();
-  const isSitemapPage = pathname === '/sitemap';
+  const isSitemapPage = pathname === "/sitemap";
+  const isrunyourbusinessPage = pathname === "/legalvision";
+  const isNewBusinessPage = pathname === "/granthelp";
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -34,8 +38,8 @@ const Layout = ({ children }) => {
             end: "bottom 20%",
             scrub: 0.5,
             markers: false,
-            invalidateOnRefresh: true
-          }
+            invalidateOnRefresh: true,
+          },
         });
         animationInstances.push(stickyAnimation);
       }
@@ -47,36 +51,35 @@ const Layout = ({ children }) => {
             trigger: buttonRef.current,
             start: "top center",
             toggleActions: "play none none none",
-            once: true
-          }
+            once: true,
+          },
         });
 
         tl.to(buttonRef.current, {
           scale: 1.1,
           duration: 0.5,
-          ease: "power2.out"
+          ease: "power2.out",
         });
 
         animationInstances.push(tl);
       }
-      console.log("ANIMATION INSTANCES", animationInstances)
+      // console.log("ANIMATION INSTANCES", animationInstances);
     }, 100);
 
     let refreshCount = 0;
     const MAX_REFRESHES = 1;
 
     intervalRef.current = setInterval(() => {
-      if(document.readyState === 'complete' && ScrollTrigger) {
+      if (document.readyState === "complete" && ScrollTrigger) {
         try {
           ScrollTrigger.refresh();
-          
 
-          if (typeof window !== 'undefined' && window.AOS) {
+          if (typeof window !== "undefined" && window.AOS) {
             window.AOS.refresh();
           }
-          
+
           refreshCount++;
-          
+
           if (refreshCount >= MAX_REFRESHES) {
             clearInterval(intervalRef.current);
           }
@@ -90,35 +93,40 @@ const Layout = ({ children }) => {
     return () => {
       clearTimeout(initTimeout);
       clearInterval(intervalRef.current);
-      
+
       try {
-        ScrollTrigger.getAll().forEach(instance => instance.kill());
-        animationInstances.forEach(animation => {
+        ScrollTrigger.getAll().forEach((instance) => instance.kill());
+        animationInstances.forEach((animation) => {
           if (animation && animation.kill) animation.kill();
         });
       } catch (e) {
         console.warn("Error cleaning up GSAP animations:", e);
       }
-      
+
       window.scrollTo(0, 0);
     };
-
-
   }, [pathname]);
 
   return (
     <>
-      <Header />
+     {isrunyourbusinessPage ? (
+    <HeaderRunYourBusiness />
+  ) : isNewBusinessPage ? (
+    <HeaderNewBusiness />
+  ) : (
+    <Header />
+  )}
       <div className="apply-container">
         <div className="children-wrapper children-wrapper-main">
           <div className="children">{children}</div>
         </div>
       </div>
-      {!isSitemapPage && (
+      {!isSitemapPage && !isrunyourbusinessPage && !isNewBusinessPage && (
         <div
           ref={stickySectionRef}
           className="sticky-section-switch"
-          style={{ opacity: 0 }}>
+          style={{ opacity: 0 }}
+        >
           <div className="apply-content">
             <div className="get-started-wrapper">
               <div className="intro-sticky">

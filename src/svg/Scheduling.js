@@ -8,7 +8,7 @@ const Scheduling = (props) => (
     xmlns="http://www.w3.org/2000/svg"
     {...props}
   >
-    <rect x={0.5} y={0.5} width={32.5} height={32.5} rx={10} fill="#999ba2" />
+    <rect x={0.5} y={0.5} width={32.5} height={32.5} rx={10} fill="#757b8a" />
     <path
       fillRule="evenodd"
       clipRule="evenodd"

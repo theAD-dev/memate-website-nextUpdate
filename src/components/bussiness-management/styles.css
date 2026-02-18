@@ -1,4 +1,17 @@
-
+              .smokeyGradient {
+        background: linear-gradient(90deg, #1ab2ff, #ffb258, #1ab2ff);
+        background-size: 300%;
+        animation: smokeMove 6s ease-in-out infinite;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        /* font-weight: 600; */
+      }
+      
+      @keyframes smokeMove {
+        0% { background-position: 0% 50%; }
+        50% { background-position: 100% 50%; }
+        100% { background-position: 0% 50%; }
+      }
 @media only screen and (min-width: 600px) and (max-width: 1024px) {
 .how-to-use p {
     font-size: 23px !important;
@@ -10,24 +23,13 @@
 
 } 
 
-
 .home-page-content {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-bottom: 55px;
 }
-/* .home-container-wrapper {
-    background: url(https://res.cloudinary.com/dn0jqjad3/image/upload/v1747310672/banner-bg_baxrae.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-        background-position: top;
-        width: 100%;
-        text-align: center;
-        margin: 0 auto;
-} */
  .home-container-wrapper {
-    background: url(https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/slider/banner-bg_baxrae-min.jpg);
     width: 100%;
     background-size: contain;
     background-repeat: no-repeat;

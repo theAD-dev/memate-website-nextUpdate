@@ -107,14 +107,14 @@ const knowledgeData = [
 
     description: `
     <p><strong class='sqsSBHFont'>3.1 How do Data Feeds work? </strong></p>
-    <p class='sqsRHFont'>Data Feeds (including bank feeds) work by you authorising a Data Supplier to provide us (and your Professional Partner, if applicable) with Imported Data. A Data Supplier might require you to give a hard copy authority form to set up the Data Feed.</p>
+    <p class='sqsRHFont'>Data Feeds (including bank feeds) work by you authorising a Data Supplier to provide us (and your Professional legalvision, if applicable) with Imported Data. A Data Supplier might require you to give a hard copy authority form to set up the Data Feed.</p>
     <p class='sqsRHFont'>Use of Data Feeds may be subject to additional terms imposed by the Data Supplier.</p>
     <p class='sqsRHFont'>Users may only use Data Feeds for the Subscriber’s transaction accounts. Users cannot use Data Feeds for a third-party account that is not the Subscriber’s account.</p>
        <p><strong class='sqsSBHFont'>3.2 Data Suppliers</strong></p>
        <ul class='listMargin'>
            <li class='sqsRHFont'>May be paid a commission or fee for providing us with your Imported Data. </li>
            <li class='sqsRHFont'>May not be under any obligation to provide us with your Imported Data and may have a right to stop doing so at any time without notice to either you or us.</li>
-           <li class='sqsRHFont'>Are not a party to any agency, partnership, or joint venture relationship with us.</li>
+           <li class='sqsRHFont'>Are not a party to any agency, legalvisionship, or joint venture relationship with us.</li>
        </ul>
        <p><strong class='sqsSBHFont'>3.3 How you can end your use of Data Feeds</strong></p>
       
@@ -241,7 +241,7 @@ Ensure departing Employees download their payslips before they leave their emplo
     description: `
    <p><strong class='sqsSBHFont'>7.1 This section applies to you, as a Subscriber, if you are responsible for paying all or part of the Fees for your Subscription Plan.</strong></p>
    
-      <p class='sqsRHFont'>You will be responsible for paying the Fees unless another person (such as a Professional Partner) is responsible for paying the Fees. If they stop paying us, you will need to pay the Fees to continue using meMate, in compliance with this section 7.</p>
+      <p class='sqsRHFont'>You will be responsible for paying the Fees unless another person (such as a Professional legalvision) is responsible for paying the Fees. If they stop paying us, you will need to pay the Fees to continue using meMate, in compliance with this section 7.</p>
       <p><strong class='sqsSBHFont'>7.2 Fees payable under your Subscription Plan</strong></p>
       <p class='sqsRHFont'>When you select your Subscription Plan, you will be informed of the pricing, product tier inclusions, and limitations which are relevant to your Subscription Plan.</p>
       <p class='sqsRHFont'>All Subscription Plans include access to a base subscription, the use of which incurs a fixed monthly Subscription Fee and, depending on your plan, may include access to Premium Features, the use of which incurs additional fees and charges.</p>
@@ -337,7 +337,7 @@ Ensure departing Employees download their payslips before they leave their emplo
 <ul class='listMargin'>
 <li class='sqsRHFont'>You will have 30 days from the effective date of termination or cancellation of your Subscription Plan to extract your Subscriber Data from meMate (Data Extraction Period) for no additional charge.</li>
 <li class='sqsRHFont'>The Data Extraction Period also applies to Employees who may need to access their payslips using meMate YourPay.</li>
-<li class='sqsRHFont'>After the Data Extraction Period, you and your Users (including your Employees and, if applicable, Professional Partner) will not have any further guaranteed access to meMate or your Subscriber Data.</li>
+<li class='sqsRHFont'>After the Data Extraction Period, you and your Users (including your Employees and, if applicable, Professional legalvision) will not have any further guaranteed access to meMate or your Subscriber Data.</li>
 <li class='sqsRHFont'>If you need to access your archived Subscriber Data records after the end of your Data Extraction Period, contact us in Australia or New Zealand. Access to archived Subscriber Data may be subject to additional fees and charges and require that you have an active Subscription Plan to view the records. We cannot guarantee that we will be able to recover your historical Subscriber Data, which is why you should keep your own records and copies of Subscriber Data. We may delete Subscriber Data after the Data Extraction Period in accordance with our data retention policies.</li>
 
 </ul>
@@ -484,14 +484,14 @@ Ensure departing Employees download their payslips before they leave their emplo
     <p class='sqsRHFont'>Personal Information means that term as defined in the Privacy Act. This includes information about an identifiable individual.</p>
     <p class='sqsRHFont'>Premium Features means any Premium Features we make available from time to time, as described on our website.</p>
     <p class='sqsRHFont'>Privacy Act means the Privacy Act 1988 (Cth) as amended or replaced from time to time (if you or your employees or customers reside or are located in Australia or your business is registered in Australia) or the Privacy Act 2020 (NZ) as amended or replaced from time to time (if you or your employees or customers reside in or are located in New Zealand or your business is registered in New Zealand).</p>
-    <p class='sqsRHFont'>Professional Partner means a person who provides bookkeeping, accounting, or similar services to the Subscriber, and who may be appointed as a User.</p>
+    <p class='sqsRHFont'>Professional legalvision means a person who provides bookkeeping, accounting, or similar services to the Subscriber, and who may be appointed as a User.</p>
     <p class='sqsRHFont'>Security Breach means unauthorised access to or alteration of the Subscriber Data.</p>
-    <p class='sqsRHFont'>Subscriber means the business that subscribes to meMate. A Subscriber may be a sole trader, partnership, company, trustee acting on behalf of a trust, or another type of organisation or entity.</p>
+    <p class='sqsRHFont'>Subscriber means the business that subscribes to meMate. A Subscriber may be a sole trader, legalvisionship, company, trustee acting on behalf of a trust, or another type of organisation or entity.</p>
     <p class='sqsRHFont'>Subscriber Data means data, information, text, graphics, images, or works of authorship of any kind (including Imported Data and Payroll Data), information (including Personal Information) and other materials entered or uploaded by you, Users, or a Data Supplier (as applicable) into meMate.</p>
     <p class='sqsRHFont'>Subscription Plan means any Subscription Plan for meMate we make available from time to time, as described on our website.</p>
     <p class='sqsRHFont'>Tax Laws means: (if you reside in Australia or your business is registered in Australia) A New Tax System (Goods and Services) Act 1999 (Cth) and the Taxation Administration Act 1953 (Cth) or similar laws and any binding regulation, ruling, or direction issued by the Australian Taxation Office as amended or replaced from time to time; or (if you reside in New Zealand or your business is registered in New Zealand) the Goods and Services Tax Act 1985 (NZ) and the Tax Administration Act 1994 (NZ) or similar laws and any binding regulation, ruling, or direction issued by the Inland Revenue Department of New Zealand as amended or replaced from time to time.</p>
     <p class='sqsRHFont'>Third Party means any person we have engaged to help us provide meMate. This includes any other service providers engaged by us to assist in the delivery, maintenance, and administration of meMate. In the case of Data Feeds, any Data Supplier that you authorize to provide Imported Data to us is also a Third Party under these Terms.</p>
-    <p class='sqsRHFont'>User means a person authorised by the Subscriber to use meMate (including Employees and Professional Partners).</p>
+    <p class='sqsRHFont'>User means a person authorised by the Subscriber to use meMate (including Employees and Professional legalvisions).</p>
     <p class='sqsRHFont'>We, us, and our means meMate Enterprise Pty Limited (ACN 654 081 482) of Level 1, Jones St, Ultimo, NSW 2007, Australia </p>
     <p class='sqsRHFont'>You and your means the Subscriber and/or User, as the context requires.</p>
     <p class='sqsRHFont'>Last updated: Aug  2024</p>

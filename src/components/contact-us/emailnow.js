@@ -9,16 +9,19 @@ import 'react-phone-number-input/style.css';
 import ReCAPTCHA from 'react-google-recaptcha';
 import { emailNowAPI } from '../../api/contactAPI';
 
-const EmailNow = () => {
+const EmailNow = (props) => {
     const [visible, setVisible] = useState(false);
     const [error, setError] = useState('');
     const [visibleEmail, setVisibleEmail] = useState(false);
     const [captchaValue, setCaptchaValue] = useState(null);
+    const [serverError, setServerError] = useState('');
+
     // Validation schema with all fields
     const schema = yup.object().shape({
         name: yup.string().required("Name is required"),
         email: yup.string().email("Invalid email address").required("Email is required"),
         message: yup.string().required("Message is required"),
+        token: yup.string()
     });
 
     const { control, handleSubmit, formState: { errors }, reset } = useForm({
@@ -27,15 +30,16 @@ const EmailNow = () => {
 
 
     const onSubmit = async (data) => {
-      if (!captchaValue) {
-          setError("captcha", {
-              type: "manual",
-              message: "Please complete the CAPTCHA.",
-          });
+      const token = (typeof window !== 'undefined' && typeof grecaptcha !== 'undefined')
+        ? grecaptcha.getResponse()
+        : (captchaValue || '');
+      if (!token) {
+          setError("Please complete the CAPTCHA.");
           return;
       }
       try {
-          const result = await emailNowAPI(data); 
+          const result = await emailNowAPI({ ...data, token }); 
+          setServerError('');
           console.log("Form submitted successfully:", result);
           reset();
           setVisible(false);
@@ -43,6 +47,7 @@ const EmailNow = () => {
           window.location.href = "/thank-you";
       } catch (err) {
           console.error("Error submitting form:", err);
+            setServerError("Server Error. Please try again later.");
         //   if (err.response && err.response.data && err.response.data.errors) {
         //       const serverErrors = err.response.data.errors;
   
@@ -64,9 +69,16 @@ const EmailNow = () => {
   
   
 
+    // const handleCaptchaChange = (value) => {
+    //   setCaptchaValue(value);
+    // };
     const handleCaptchaChange = (value) => {
-      setCaptchaValue(value);
-    };
+        setCaptchaValue(value);
+        if (value) {
+            setError('');
+            setServerError('');
+        }
+        };
   
     const footerContent = (
         <div className="flexWrapBoxE">
@@ -77,14 +89,14 @@ const EmailNow = () => {
 
     const HeaderContent = (
         <div className="flexWrapBoxc requestCallback">
-            <h1>Email now</h1>
+            <h1>{props.headingText}</h1>
         </div>
     );
 
     return (
         <>
             <div className="query-button query-button-color">
-            <button onClick={() => setVisible(true)}>Email now</button></div>
+            <button onClick={() => setVisible(true)}>{props.buttonText}</button></div>
             <Dialog
                 visible={visible}
                 style={{ width: '566px' }}
@@ -180,12 +192,23 @@ const EmailNow = () => {
                         {errors.message && <p className="error-message redmessage">{errors.message.message}</p>}
                     </div>
                     <div className={style.marginbotton}>
-            <ReCAPTCHA
-        sitekey="6LfAwdMqAAAAAFtI7SUPXKb1ew7C0jUYRvxDqjpS"
-        onChange={handleCaptchaChange}/>
-        
+                    <ReCAPTCHA
+                    sitekey={process.env.MAIL_SITE_KEY}
+                    onChange={handleCaptchaChange}
+                    />
+                  {error && (
+                        <p className="error-message redmessage">
+                        {error}
+                        </p>
+                    )}
+                 
           </div>
                 </form>
+                 {serverError && (
+                        <p className="error-message redmessage">
+                        {serverError}
+                        </p>
+                    )}
             </Dialog>
         </>
     );

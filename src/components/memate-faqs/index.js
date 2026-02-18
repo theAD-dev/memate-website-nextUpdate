@@ -65,7 +65,7 @@ const article =  {
           <div className={`titleHead ${style.mainHeadTitleF}`}>
             <h2>FAQs</h2>
             <div className={style.faqman}>
-                 <img src="https://res.cloudinary.com/dn0jqjad3/image/upload/v1748587435/faq-man_zfwpjv.png" alt="FAQ" />
+                 <img src="https://memate-website.s3.ap-southeast-2.amazonaws.com/brand/faq-man_zfwpjv.png" alt="FAQ" />
             </div>
 
           </div>

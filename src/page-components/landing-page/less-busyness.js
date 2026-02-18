@@ -107,7 +107,7 @@ const LessBusyness = () => {
                   className={style.reactPlayer}
                 >
                   <source
-                    src="https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/video/memate-intro-c.mp4"
+                    src="https://memate-website.s3.ap-southeast-2.amazonaws.com/19-11-2025/Memate+Video+-+revised.mp4"
                     type="video/mp4"
                   />
                   Your browser does not support the video tag.
@@ -124,13 +124,13 @@ const LessBusyness = () => {
                 </div>
               </div>
               <div className={style.videoWrapper2}></div>
-              <div className={style.videooverlyImage}>
+              {/* <div className={style.videooverlyImage}>
                 <LazyLoadImage
                   alt="CRM for Small Business"
                   src="https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/slider/video-sticky-img-min.png"
                   effect="blur"
                 />
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
@@ -148,6 +148,7 @@ const LessBusyness = () => {
               ref={modalVideoRef}
               width="100%"
               height="100%"
+              poster="https://memate-website.s3.ap-southeast-2.amazonaws.com/videoposter_p3khgg.png"
               style={{ backgroundColor: "white", borderRadius: "40px" }}
               loop
               autoPlay
@@ -157,7 +158,7 @@ const LessBusyness = () => {
               onPause={() => setIsPlaying(false)}
             >
               <source
-                src="https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/video/memate-intro-full.mp4"
+                src="https://memate-website.s3.ap-southeast-2.amazonaws.com/19-11-2025/Memate+Video+-+revised.mp4"
                 type="video/mp4"
               />
               Your browser does not support the video tag.

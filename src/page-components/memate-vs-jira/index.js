@@ -4,9 +4,9 @@ import {
   QuestionAnswer,
   SalesComponent,
   SalesComponentFeature,
-  SmartInvestment
 } from "../../components/memate-vs-jira";
 import AppWrapper from "../../components/AppWrapper";
+import PricingModelCommon from "@/components/pricingmodelcommon";
 // import ComingSoon from '../../layout/coming-soon';
 // import { Helmet } from "react-helmet-async";
 const ServicesVsJiraPage = () => {
@@ -17,7 +17,7 @@ const ServicesVsJiraPage = () => {
      <div className="bgshadowwrapper">
       <SalesComponent />
       <SalesComponentFeature />
-      <SmartInvestment />
+       <PricingModelCommon />
       <QuestionAnswer />
       </div>  
        {/* <ComingSoon /> */}

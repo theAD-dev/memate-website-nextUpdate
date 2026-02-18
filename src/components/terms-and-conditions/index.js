@@ -99,6 +99,28 @@ const knowledgeData = [
     `,
     children: [],
   },
+  {
+    id: 8,
+    name: "Account Cancellation & Data Retention",
+
+    description: `
+    <p class='paraTextTos'>If your Organisation account with memate is cancelled or deactivated, all data linked to the Organisation — including projects, jobs, shifts, communication, and files — will be retained for <b>50 days</b> from the date of cancellation. After that, all Organisation data will be permanently deleted from memate servers.</p>
+    <p class='paraTextTos'>During this 50-day period, the Organisation may contact memate to retrieve or migrate data. After the retention window, no recovery will be possible.</p>
+    `,
+    children: [],
+  },
+  {
+    id: 9,
+    name: "User Disconnection from Organisation",
+
+    description: `
+    <p class='paraTextTos'>If you are removed or disconnected from an Organisation within memate (e.g., due to role change, contract end, or admin removal), your access to Organisation data will immediately be restricted.</p>
+    <p class='paraTextTos'>Any data you’ve submitted (jobs, messages, timesheets, photos, etc.) remains the property of the Organisation and will stay within its account.</p>
+    <p class='paraTextTos'>You will have <b>14 days</b> to access and download your personal records or exported logs (where available) from your memate app before your user data access is permanently removed.</p>
+
+    `,
+    children: [],
+  },
 ];
 
 
@@ -221,7 +243,7 @@ const article =  {
         </div>
         <div className="kb-wrapper">
         <div className="kb-left-wrapperm kb-left-wrappermain kb-tos-wrapperF">
-          <StickyBox offsetTop={100} offsetBottom={0}>
+          <StickyBox offsetTop={200} offsetBottom={0}>
           {knowledge.map((item) => (
             <ul className="kb-listF" key={item.id}>
               <li

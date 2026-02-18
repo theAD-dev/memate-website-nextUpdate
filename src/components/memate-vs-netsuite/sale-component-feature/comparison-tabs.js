@@ -29,7 +29,7 @@ const data = [
     {
       category: "Team Scheduling & Time Tracking",
       meMate: "Staff clock-in/out, shift planner, task timers",
-      meMateM8: "Available via modules or partner tools",
+      meMateM8: "Available via modules or legalvision tools",
       trueIcon: `https://memate-website.s3.ap-southeast-2.amazonaws.com/trueIcon.png`,
       falseIcon: `https://memate-website.s3.ap-southeast-2.amazonaws.com/slash-circle.png`,
        toolTip: "Staff clock-in/out, shift planner, task timers"
@@ -53,7 +53,7 @@ const data = [
     {
       category: "Local Support & Setup",
       meMate: "Free onboarding, Australian-based team, data migration included",
-      meMateM8: "Setup through NetSuite partners; paid onboarding",
+      meMateM8: "Setup through NetSuite legalvisions; paid onboarding",
       trueIcon: `https://memate-website.s3.ap-southeast-2.amazonaws.com/trueIcon.png`,
       falseIcon: `https://memate-website.s3.ap-southeast-2.amazonaws.com/falseIcon.png`,
        toolTip: "Free onboarding, Australian-based team, data migration included"

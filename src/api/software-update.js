@@ -11,7 +11,7 @@ export const updateList = async () => {
     try {
       const response = await fetch("https://admin.memate.com.au/api/update", requestOptions);
       const result = await response.json(); 
-      console.log("API response:", result);
+      // console.log("API response:", result);
   
       return Array.isArray(result.data) ? result.data : [];
   
@@ -34,7 +34,7 @@ export const updateListLatest = async () => {
     try {
       const response = await fetch("https://admin.memate.com.au/api/get-latest-five-update", requestOptions);
       const result = await response.json(); 
-      console.log("API RESPONSE updateListLatest -- ", result);
+      // console.log("API RESPONSE updateListLatest -- ", result);
       return Array.isArray(result.data) ? result.data : (Array.isArray(result) ? result : []);
   
     } catch (error) {

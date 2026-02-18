@@ -129,6 +129,9 @@ export async function GET() {
     <loc>https://memate.com.au/compare/memate-vs-quickbooks</loc>
   </url>
   <url>
+    <loc>https://memate.com.au/runyourbusiness</loc>
+  </url>
+  <url>
     <loc>https://memate.com.au/compare/memate-vs-jira</loc>
   </url>
   <url>

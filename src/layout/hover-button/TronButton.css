@@ -338,7 +338,8 @@
   display: block;
   position: absolute;
   inset: -3.3px 0% -8px -3.5px;
-  animation: fadeInOut 10s linear infinite;
+  animation: fadeInOut 4s linear infinite;
+  animation-delay: 4s;
 }
 
 .btn-base--tron-radial:hover{

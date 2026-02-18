@@ -82,6 +82,9 @@
       background-position: bottom;
       background-size: contain;
     }
+    .cardContainerMainHome .cardContainer .card {
+    width: 39% !important;
+}
   }
   @media screen and (max-width: 480px) {
     .shelfgradientwrap .shelfgradient {

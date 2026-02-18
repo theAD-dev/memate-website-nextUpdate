@@ -4,6 +4,7 @@ import Link from "next/link";
 // import { Helmet } from "react-helmet-async";
 import SuccessStories from "../success-stories";
 import NewsSchema from "../blog/news-schema";
+import { useRef, useState } from "react";
 
 const CustomerStoriesImage =
   "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/customersoriesCamera.png";
@@ -53,6 +54,20 @@ function CameraFix() {
       "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/logo.svg",
     keywords: "Camera Repair Software in Action | MeMate Case Study",
   };
+  const videoRef = useRef(null);
+  const [isPlaying, setIsPlaying] = useState(false);
+
+  const togglePlay = () => {
+    if (!videoRef.current) return;
+
+    if (videoRef.current.paused) {
+      videoRef.current.play();
+      setIsPlaying(true);
+    } else {
+      videoRef.current.pause();
+      setIsPlaying(false);
+    }
+  };
 
   return (
     <>
@@ -85,32 +100,53 @@ function CameraFix() {
             </Link>
           </div>
 
-          <div className="customerstoriesGrid">
-            <h1>How Camera Fix Runs Their Repair Business with MeMate</h1>
-            <div className="innerGrid imageOverlyText">
+          <div className="customerstoriesGrid headingStyleChange">
+            <h1>How Camera Fix Runs <br/>Their Repair Business with MeMate</h1>
+            <div className="innerGrid imageOverlyText videoPlayWrap">
               <div>
-                <img
+                {/* <img
                   className="img-container-stories"
                   src={CustomerStoriesImage}
                   alt="Camera Fix"
-                />
+                /> */}    
+          <div className="video-wrapper video-wrapperCamera" onClick={togglePlay}>
+              <video
+                                  width="100%"
+                                  height="100%"
+                                  // autoPlay
+                                  // muted
+                                  loop
+                                  poster="https://memate-website.s3.ap-southeast-2.amazonaws.com/camrafixVideo.jpg"
+                                  ref={videoRef}
+                                  playsInline
+                                  >
+                                  <source
+                                    src="https://memate-website.s3.ap-southeast-2.amazonaws.com/19-11-2025/MeMate+x+Camerafix-edit1208+(1).mp4"
+                                    type="video/mp4"
+                                  />
+                                  Your browser does not support the video tag.
+                                </video>
+
+            {!isPlaying && <div className="play-icon"><img src="https://memate-website.s3.ap-southeast-2.amazonaws.com/Play.png" alt="Play Icon" /></div>}
+          </div>
               </div>
-              <div className="customerstoriesDetails">
+             
+            </div>
+             <div className="customerstoriesDetails customerstoriesDetailsT">
                 <div>
-                  <div className="category">Camera Fix</div>
-                  <div className="date-heading-title">
-                    <span className="textCustomerStories">
-                      Empowering a Boutique Camera Repair Shop to Manage
+                  <div className="category"><img src="https://memate-website.s3.ap-southeast-2.amazonaws.com/camrafixBrandLogo.png" /></div>
+                  <div className="date-heading-title mobileTextDecrese">
+                    <span className="camraFixSubHeading">
+                      Empowering a Boutique Camera Repair Shop <br/>to Manage
                       Business and Serve Over 100 Clients Monthly
                     </span>
                   </div>
-                  <Link href="/customer-stories/camera-fix" className="readMoreBut">Read More</Link>
+       
                 </div>
               </div>
-            </div>
             <div className="gadientText">
               <h2 className="centeredText">
-                Business management software for Electronics Repair Shop in
+                Business management software for Electronics Repair <br/>Shop in
                 Australia.
               </h2>
             </div>
@@ -249,7 +285,7 @@ function CameraFix() {
               </div>
             </div>
             <div className="gadientText">
-              <h2 className="gameChangerText">
+              <h2 className="gameChangerText gameChangerTextMobileSmaill">
                 “Switching to meMate has been a game-changer for us. We’re able
                 to provide the next level of service to our clients, and the
                 software has made our operations much smoother. It’s an

@@ -6,15 +6,7 @@ import { LazyLoadImage } from "react-lazy-load-image-component";
 const MemateFeatureBoastEfficiency = () => {
   return (
     <div
-      className="efficiency-section-container mainOperationRight"
-      data-aos="fade-up"
-      data-aos-offset="50"
-      data-aos-delay="50"
-      data-aos-duration="1300"
-      data-aos-mirror="true"
-      data-aos-once="false"
-      data-aos-anchor-placement="top-bottom"
-    >
+      className="efficiency-section-container mainOperationRight">
       <div className="efficiency-section">
         <FeatureCard
           subHeading="Dashboard"
@@ -23,13 +15,12 @@ const MemateFeatureBoastEfficiency = () => {
           className="shadowRightline1 shadowLeftline1"
           description="See the real-time costs and time spent on each product or service, and adjust pricing by viewing operational profits in real time."
           cardButton="See All Features"
-          
           maxImage={
             <LazyLoadImage
-                                            alt="Boost Profits & efficiency"
-                                            src="https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/slider/img-boost-profile-min.png"
-                                            effect="blur" 
-                                          />
+              alt="Boost Profits & efficiency"
+              src="https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/slider/img-boost-profile-min.png"
+              effect="blur"
+            />
           }
         />
       </div>

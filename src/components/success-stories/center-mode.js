@@ -81,7 +81,7 @@ const SliderStories = () => {
               <div className="date-heading-title "><Link className="sequel_sans_roman_head" href='/customer-stories/camera-fix'>Empowering Camera Repair Shop to Manage Business and Serve Over 100 Clients Monthly</Link></div>
             </div>
             <div className="customerBrandlogo">
-            <img src="https://res.cloudinary.com/dn0jqjad3/image/upload/v1747218896/img-logo_vnuajz.png" alt="Camera Fix Logo"  style={{ width: '175.888px' }}/>
+            <img src="https://memate-website.s3.ap-southeast-2.amazonaws.com/brand/img-logo_vnuajz.png" alt="Camera Fix Logo"  style={{ width: '175.888px' }}/>
         </div>
         </div>
         <div className="slider-item">
@@ -98,7 +98,7 @@ const SliderStories = () => {
               <div className="date-heading-title "><Link className="sequel_sans_roman_head" href='/customer-stories/pro-vinyl'>Running a Car Wrapping Company on meMate</Link></div>
             </div>
             <div className="customerBrandlogo">
-            <img src="https://res.cloudinary.com/dn0jqjad3/image/upload/v1747223666/provinyl-logo_aezk46.png" alt="Camera Fix Logo"  style={{ width: '175.888px' }}/>
+            <img src="https://memate-website.s3.ap-southeast-2.amazonaws.com/brand/provinyl-logo_aezk46.png" alt="Camera Fix Logo"  style={{ width: '175.888px' }}/>
         </div>
         </div>
         <div className="slider-item">
@@ -115,7 +115,7 @@ const SliderStories = () => {
               <div className="date-heading-title"><Link className="sequel_sans_roman_head" href='/customer-stories/elite-life'>Using meMate to Run a Private Membership Club</Link></div>
             </div>
              <div className="customerBrandlogo">
-            <img src="https://res.cloudinary.com/dn0jqjad3/image/upload/v1747223665/img-logo-elfinance-200x65_olwawn.png" alt="Camera Fix Logo"  style={{ width: '175.888px' }}/>
+            <img src="https://memate-website.s3.ap-southeast-2.amazonaws.com/brand/img-logo-elfinance-200x65_olwawn.png" alt="Camera Fix Logo"  style={{ width: '175.888px' }}/>
         </div>
         </div>
         <div className="slider-item">
@@ -132,7 +132,7 @@ const SliderStories = () => {
               <div className="date-heading-title"><Link className="sequel_sans_roman_head" href='/customer-stories/boat-wizard'>We quote and invoice all our marine engineering services.</Link></div>
             </div>
              <div className="customerBrandlogo">
-            <img src="https://res.cloudinary.com/dn0jqjad3/image/upload/v1747224322/img-logo-w_1_1_fsfbgn.png" alt="Camera Fix Logo"  style={{ width: '175.888px' }}/>
+            <img src="https://memate-website.s3.ap-southeast-2.amazonaws.com/brand/img-logo-w_1_1_fsfbgn.png" alt="Camera Fix Logo"  style={{ width: '175.888px' }}/>
         </div>
         </div>
         <div className="slider-item">
@@ -149,7 +149,7 @@ const SliderStories = () => {
               <div className="date-heading-title"><Link className="sequel_sans_roman_head" href='/customer-stories/sorted-media'>Photography and Videography on Demand</Link></div>
             </div>
              <div className="customerBrandlogo">
-            <img src="https://res.cloudinary.com/dn0jqjad3/image/upload/v1747223666/logo-sorted-min-200x93_1_oz8oy2.png" alt="Camera Fix Logo"  style={{ width: '175.888px' }}/>
+            <img src="https://memate-website.s3.ap-southeast-2.amazonaws.com/brand/logo-sorted-min-200x93_1_oz8oy2.png" alt="Camera Fix Logo"  style={{ width: '175.888px' }}/>
         </div>
         </div>
      

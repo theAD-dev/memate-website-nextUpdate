@@ -18,6 +18,32 @@
   -webkit-background-clip: text;
   background-clip: text;
 } */
+               .smokeyGradient {
+        background: linear-gradient(90deg, #1ab2ff, #ffb258, #1ab2ff);
+        background-size: 300%;
+        animation: smokeMove 6s ease-in-out infinite;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+
+        color: #0000;
+    text-align: center;
+    letter-spacing: -1px;
+    -webkit-text-fill-color: #0000;
+    -webkit-background-clip: text;
+    margin: 25px 0 0;
+    padding-bottom: 50px;
+    padding-right: 0;
+    font-size: 72px;
+    font-style: normal;
+    line-height: 80px;
+    font-family: 'sequel_sans_semi_bold_disp' !important;
+      }
+      
+      @keyframes smokeMove {
+        0% { background-position: 0% 50%; }
+        50% { background-position: 100% 50%; }
+        100% { background-position: 0% 50%; }
+      }
 .sliderTabWrapper .slick-slide.slick-active.slick-center.slick-current span {
     color: #000;
     font-family: 'sequel_sans' !important;
@@ -480,6 +506,9 @@ object-fit: cover;
 @media screen and (max-width: 767px) {
   span.gradientAnimenate {
     font-size: 40px !important;
+}
+.replace-text{
+  padding-bottom: 0px;
 }
   .application-heading h3 {
     font-size: 24px;

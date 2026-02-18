@@ -49,6 +49,20 @@ h1.h1tagsseo.h1tagsseof {
   line-height: 24px;
   letter-spacing: -0.48px;
 }
+.gradientText {
+  background: linear-gradient(90deg, #1ab2ff, #ffb258, #1ab2ff);
+  background-size: 300%;
+  animation: smokeMove 6s ease-in-out infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  /* font-weight: 600; */
+}
+
+@keyframes smokeMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
 @media screen and (max-width: 767px) {
 .sales-headingF {
     font-size: 53px;

@@ -1,7 +1,9 @@
 .parent {
   max-width: 1000px;
 }
-
+.headingStyleChange h1 {
+    font-size: 48px !important;
+}
 .accounting-text-A {
   color: #29292b;
   font-family: "sequel_sans" !important;
@@ -12,7 +14,52 @@
   /* 21px */
   letter-spacing: -0.21px;
 }
+.video-wrapperCamera{
+  position: relative;
+  cursor: pointer;
+}
+.video-wrapperCamera .play-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 64px;
+    color: #fff;
+    background: rgba(182, 182, 182, 0.4);
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none;
+    cursor: pointer;
+}
+.imageOverlyText.videoPlayWrap .customerstoriesDetails {
+    color: #fff;
+    background: linear-gradient(0deg, rgba(0, 0, 0, .77) 0%, rgba(0, 0, 0, 0) 44.23%), linear-gradient(rgba(0, 0, 0, .1) 0%, rgba(0, 0, 0, .5) 100%);
+    border-radius: 30px;
+    justify-content: start;
+    align-items: flex-end;
+    display: flex;
+    position: absolute;
+    top: 0;
+    bottom: 0px;
+    left: 0;
+    right: 0;
+}
+.customerstoriesDetails.customerstoriesDetailsT {
+    background: transparent;
+    text-align: center;
+    padding: 0 0 30px;
+}
+.customerstoriesDetails.customerstoriesDetailsT span.textCustomerStories {
+    color: #29292b;
+}
+.videoPlayWrap video{
+  border-radius: 30px;
 
+}
 .customerstoriesGrid h1 {
   margin-bottom: 30px;
   color: #29292B;
@@ -328,7 +375,7 @@
   border-radius: 30px;
   background: #F7F8FA;
   margin-bottom: 48px;
-  padding: 48px 42px;
+  padding: 35px 42px;
 }
 
 .gadientText2 {
@@ -480,10 +527,30 @@
 }
 
 @media screen and (max-width: 767px) {
+  .customerstoriesDetailsT .camraFixSubHeading {
+    margin-top: 14px!important;
+    font-size: 23px !important;
+    line-height: 30px!important;
+}
+.gadientText h2 br {
+    display: none;
+}
+.customerstoriesDetailsT .camraFixSubHeading br {
+    display: none;
+}
   .gadientText3 {
     padding: 30px 0px;
   }
-
+  h2.gameChangerText.gameChangerTextMobileSmaill {
+    font-size: 17px !important;
+}
+.mobileTextDecrese .textCustomerStories{
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 100;
+    line-height: 25px;
+    letter-spacing: 0;
+}
   .gadientText3 h2 {
     font-size: 16px;
     line-height: 21px;
@@ -768,8 +835,16 @@ overflow-wrap: break-word;
 } 
 
 
+.customerstoriesDetailsT .camraFixSubHeading {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 420;
+    line-height: 40px;
+    margin-top: 24px;
+    display: inline-block;
+}
 .customerstoriesGrid .innerGrid {
-margin-bottom: 56px;
+margin-bottom: 30px;
 }
 .customerstoriesDetails {
  border-radius: 0px 0px 30px 30px;
@@ -856,6 +931,14 @@ font-size:14px;
   display: flex;
 }
 @media screen and (max-width: 767px) {
+  .video-wrapperCamera .play-icon {
+    width: 60px;
+    height: 60px;
+    font-size: 25px;
+}
+.video-wrapperCamera .play-icon img {
+    width: 100%;
+}
 .customerstoriesGrid {
  width: 100%;
  margin: 42px auto 15px;

@@ -30,7 +30,7 @@ const SalesManagement = () => {
         assign, track, and manage jobs efficiently. This <br />
         tool keeps project coordination straightforward <br />
         and organized for companies working closely with <br />
-        external partners.
+        external legalvisions.
        </p>
       </div>
     </div>
