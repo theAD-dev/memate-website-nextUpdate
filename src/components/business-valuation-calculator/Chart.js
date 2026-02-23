@@ -288,7 +288,7 @@ y: {
 
   return (
     <>
-    <div style={{ position: "relative", height: "400px", marginTop: "20px" }}>
+    <div className="mainChatWrapper" style={{ position: "relative", height: "400px", marginTop: "20px" }}>
         <div style={{
           position: "absolute",
           left: "-53px",

@@ -87,11 +87,7 @@ const LessBusyness = () => {
           <div className={style.lessContainers}>
             <h3>More Business - Less Busyness</h3>
             <p>
-              You can send a quote in just a few clicks, convert it into a
-              project, and assign team members instantly.
-              <br />
-              Project timelines, expenses, client chats, invoices - it’s all
-              right here.
+              Simplify your workflow with powerful company management software built for growing businesses. Send quotes in seconds, convert them into projects instantly, and assign tasks with just a few clicks. Manage timelines, track expenses, handle client communication, and generate invoices — all in one smart, cloud-based platform designed to save time and boost productivity.
             </p>
 
             <div className={style.videoWrapper}>

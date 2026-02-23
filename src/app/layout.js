@@ -85,7 +85,7 @@ export default function RootLayout({ children }) {
   }}
 />
 
-<Script
+{/* <Script
   id="ld-organization"
   type="application/ld+json"
   strategy="afterInteractive"
@@ -104,7 +104,7 @@ export default function RootLayout({ children }) {
       ]
     })
   }}
-/>
+/> */}
 <Script
   id="ld-softwareapp"
   type="application/ld+json"
@@ -217,7 +217,7 @@ export default function RootLayout({ children }) {
             document.body.appendChild(jotScript);
           `}
         </Script>
-        
+     
       </head>
       <body>
         <noscript>
@@ -227,6 +227,7 @@ export default function RootLayout({ children }) {
             width="0"
             style={{ display: "none", visibility: "hidden" }}
           />
+          
         </noscript>
         <noscript>You need to enable JavaScript to run this app.</noscript>
         <Providers>{children}</Providers>

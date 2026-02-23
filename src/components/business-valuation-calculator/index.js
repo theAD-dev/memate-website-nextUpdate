@@ -166,7 +166,9 @@ export default function MeMateCalculator() {
 
   return (
     <div className="memate-wrapper">
-      <div className="memateCalbox">
+        <div className="memateCalbox">
+      <div className="resultsHeadWrap">
+    
         <h2 className="memateCalitle">
           How Much Is My Business Worth?
         </h2>
@@ -195,7 +197,8 @@ export default function MeMateCalculator() {
         </div>
 
         <Chart valuation={valuation} uplift={uplift} />
-
+</div>
+        <div className="resultsMainWrap">
         <div className="results-area">
           <div className="value-block">
             <p>Estimated <br />business value today:</p>
@@ -238,6 +241,7 @@ export default function MeMateCalculator() {
             Full disclaimer
           </button>
         </div>
+      </div>
       </div>
 
       <Modal

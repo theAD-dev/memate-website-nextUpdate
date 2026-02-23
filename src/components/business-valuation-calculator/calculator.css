@@ -837,17 +837,28 @@ p.profitabilityCount {
     margin: 0 auto;
     padding: 0 11px;
 }
+.resultsMainWrap {
+    position: sticky;
+    bottom: 0;
+    z-index: 99;
+    background: #fff;
+    overflow: visible !important;
+}
+.resultsHeadWrap {
+    height: 100vh;
+    overflow-y: auto;
+}
 .customCalModal {
     width: 96% !important;
     padding: 10px !important;
 }
 .memateCalitle {
-    font-size: 31px;
+    font-size: 26px;
     line-height: 42px;
 }
 .memateCalSubtitle {
-    font-size: 48px;
-    line-height: 59px;
+    font-size: 33px;
+    line-height: 38px;
 }
 .customCalModalHeading {
     padding: 26px 9px 0;
@@ -898,13 +909,19 @@ p.profitabilityCount {
     text-align: center;
     margin-bottom: 20px;
 }
+.results-area .value-block p {
+    font-size: 14px;
+}
+.results-area .value-block p br {
+    display: none;
+}
 .results-area .value-block h2 {
     letter-spacing: 0;
     color: #29292b;
     margin: 7px 0;
-    font-size: 42px;
+    font-size: 29px;
     font-weight: 425;
-    line-height: 44px;
+    line-height: 31px;
 }
 .specials-grid {
     grid-template-columns: repeat(2, 1fr);
