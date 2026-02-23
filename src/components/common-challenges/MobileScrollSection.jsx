@@ -49,19 +49,19 @@ export default function MobileScrollSync() {
         <div className="phone-screen">
           <div className="scroll-content" ref={scrollRef}>
             <img
-              src="https://res.cloudinary.com/dn0jqjad3/image/upload/v1770966184/sdfdsfsdf_clta4o.png"
+              src="https://memate-website.s3.ap-southeast-2.amazonaws.com/1.png"
               className="screen-image"
               alt="Screen 1"
             />
 
             <img
-              src="https://res.cloudinary.com/dn0jqjad3/image/upload/v1770966184/sdfdsfsdf_clta4o.png"
+              src="https://memate-website.s3.ap-southeast-2.amazonaws.com/1.png"
               className="screen-image"
               alt="Screen 2"
             />
 
             <img
-              src="https://res.cloudinary.com/dn0jqjad3/image/upload/v1770966184/sdfdsfsdf_clta4o.png"
+              src="https://memate-website.s3.ap-southeast-2.amazonaws.com/1.png"
               className="screen-image"
               alt="Screen 3"
             />
@@ -70,7 +70,7 @@ export default function MobileScrollSync() {
 
         {/* Phone Frame Overlay */}
         <img
-          src="https://res.cloudinary.com/dn0jqjad3/image/upload/v1770962315/mobile-img12_va9ume.png"
+          src="https://memate-website.s3.ap-southeast-2.amazonaws.com/mobile-img12_va9ume.png"
           className="frame-image"
           alt="Phone Frame"
         />

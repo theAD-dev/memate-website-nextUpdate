@@ -1,5 +1,5 @@
 .mobile-demo-section {
-    background: url("https://res.cloudinary.com/dn0jqjad3/image/upload/v1770965895/3_1_x01xh5.png") !important;
+    background: url("https://memate-website.s3.ap-southeast-2.amazonaws.com/3_1_x01xh5.png") !important;
     justify-content: center;
     align-items: center;
     height: 120vh;
@@ -13,16 +13,7 @@
    width: 100%;
   margin: auto;
 }
-/* .phone-frame:before {
-    content: "";
-    z-index: 9;
-    background: url("https://res.cloudinary.com/dn0jqjad3/image/upload/v1770966534/Vector_qeavrm.png") center / cover no-repeat;
-    width: 698px;
-    height: 330px;
-    position: absolute;
-    bottom: -15px;
-    left: 0;
-} */
+
 .phone-frame:before {
     z-index: 9;
     content: "";

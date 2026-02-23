@@ -29,6 +29,7 @@ const RightColorArrow =
           linkResources: "/resources",
           "Resources & tools": [
             { content: "Supplier Database", link: "/supplier-database" },
+            { content: "Business Valuation Calculator", link: "/business-valuation-calculator" },
           ],
           "MeMate Manual": [
             { content: "Knowledge Base", link: "/knowledge-base" },

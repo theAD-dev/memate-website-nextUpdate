@@ -4,7 +4,7 @@ import BussinessManagement from "../../components/bussiness-management";
 import CommonChallenges from "../../components/common-challenges";
 import FeaturedOn from "../../components/featured-on";
 import FindOneApplication from "../../components/find-one-all";
-
+import AutomotiveQuesitonAndAns from "./automotive-question-ans/index";
 import NewsAndUpdate from "../../components/news-and-updates";
 // import NextStep from "../../components/next-step"
 import SeamlessInegration from "../../components/seamless-integration"; 
@@ -26,18 +26,19 @@ const LandingPage = ({ postsLatest }) => {
       {/* <AppWrapper> */}
         <Layout>
           <BussinessManagement /> 
-          <LessBusyness />   
+          <LessBusyness />     
           <FeaturedOn />  
           <FindOneApplication />
           <CommonChallenges /> 
-          <ZeroOfferOnboarding />
-          <HomePageFeatuchers />
+          <ZeroOfferOnboarding /> 
+          <HomePageFeatuchers /> 
           <SeamlessInegration />
           <BrandLogoSlide />    
           <CaseStudiesHome />          
           {/* <SimpleVersatilePowerful /> */}
           <SuccessStories />  
           <NewsAndUpdate postsLatest={postsLatest} />
+           <AutomotiveQuesitonAndAns />  
         </Layout>
       {/* </AppWrapper> */}
     </>

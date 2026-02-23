@@ -27,7 +27,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-bottom: 55px;
+    padding-bottom: 0px;
 }
  .home-container-wrapper {
     width: 100%;
@@ -76,7 +76,23 @@
 .heding-text-top {
   padding: 0px 0px 23px 0px;
 }
-
+.homePageNewContent p {
+    color: #757b8a;
+    text-align: center;
+    letter-spacing: -.72px;
+    max-width: 1022px;
+    margin: 0 auto -2px;
+    padding-top: 15px;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 100;
+    line-height: 32px;
+    font-family: "sequel_sans_roman_head" !important;
+}
+.homePageNewContent {
+    width: 800px;
+    text-align: center;
+}
 .heding-text-top .mainHomeTitle {
   text-align: center;
   font-size: 220px;
@@ -281,6 +297,14 @@
 
 
 @media screen and (max-width: 767px) {
+  .homePageNewContent {
+    text-align: center;
+    width: 100%;
+}
+.homePageNewContent p {
+    font-size: 20px;
+    line-height: 31px;
+}
   .shadowLeftline::before {
   width: 100% !important;
     left: 0px !important;

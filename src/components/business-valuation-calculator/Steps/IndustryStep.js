@@ -10,10 +10,13 @@ export default function IndustryStep({ form, update }) {
           onChange={(e) => update("industry", e.target.value)}
         >
           <option value="">Select</option>
-          <option value="tech">Tech</option>
-          <option value="retail">Retail</option>
-          <option value="health">Healthcare</option>
-          <option value="finance">Finance</option>
+          <option value="tradeconstruction">Trade & Construction</option>
+          <option value="professionalservices">Professional Services</option>
+          <option value="retailecommerce">Retail / Ecommerce</option>
+          <option value="manufacturing">Manufacturing</option>
+          <option value="creativedigital">Creative / Digital</option>
+          <option value="hospitality">Hospitality</option>
+          <option value="other">Other</option>
         </select>
       </div>
       <div>
@@ -25,7 +28,7 @@ export default function IndustryStep({ form, update }) {
           <option value="">Select</option>
           <option value="local">Local</option>
           <option value="national">National</option>
-          <option value="global">Global</option>
+          <option value="international">International</option>
         </select>
       </div>
     </div>

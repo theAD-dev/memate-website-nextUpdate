@@ -3,7 +3,36 @@
   display: flex;
   justify-content: center;
 }
+.introTextTop {
+    text-align: center;
+    width: 1000px;
+    margin: 0 auto;
+}
+.introTextTop h4 {
+    color: #29292b;
+    letter-spacing: -.72px;
+    margin-top: 15px;
+    margin-bottom: 16px;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 360;
+    line-height: 32px;
+    font-family: 'sequel_sans_roman_disp' !important;
+  margin-bottom: 8px;
+  margin-top: 0;
+}
 
+.introTextTop p {
+    color: #757b8a;
+    letter-spacing: -.72px;
+    margin-bottom: 16px;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 360;
+    line-height: 32px;
+    font-family: 'sequel_sans_roman_head' !important;
+    margin-top: 0;
+}
 .integrationWrapperAni {
     background: radial-gradient(circle, #2c2c2c, #0f0f0f);
     border-radius: 28px;
@@ -28,8 +57,12 @@
   gap: 24px;
 
 }
-.integrationOuter{
-    margin-top: 100px;
+.introTextTopIntegration {
+    margin-top: 0;
+    margin-bottom: 32px !important;
+}
+.introTextTopBottom {
+    margin-top: 32px;
 }
 .integrationOuter .logo-box {
     background: #fff;
@@ -325,6 +358,15 @@
 }
 
 @media screen and (max-width: 767px) {
+    .introTextTop {
+    width: 100%;
+}
+.introTextTop p {
+    font-size: 20px;
+}
+.introTextTop h4 {
+    font-size: 27px;
+}
     .integation-title span {
         font-size: 30px;
         line-height: 40px;

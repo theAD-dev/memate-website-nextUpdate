@@ -8,45 +8,58 @@ export default function RevenueStep({ form, update }) {
       <div className="grid">
         <div>
           <label>Revenue this year</label>
-          <input
-            type="number"
-            placeholder={form.revenue1}
-            onChange={(e) => update("revenue1", Number(e.target.value))}
-          />
+        <input
+  type="text"
+  value={form.revenue1 ? `$${form.revenue1.toLocaleString()}` : ""}
+  placeholder="$0"
+  onChange={(e) => {
+    const raw = e.target.value.replace(/[^0-9]/g, "");
+    update("revenue1", Number(raw));
+  }}
+/>
+
         </div>
 
         <div>
           <label>Revenue last year</label>
-          <input
-            type="number"
-            placeholder={form.revenue2}
-            onChange={(e) => update("revenue2", Number(e.target.value))}
-          />
+               <input
+              type="text"
+              value={form.revenue2 ? `$${form.revenue2.toLocaleString()}` : ""}
+              placeholder="$0"
+              onChange={(e) => {
+                const raw = e.target.value.replace(/[^0-9]/g, "");
+                update("revenue2", Number(raw));
+              }}
+            />
+
         </div>
 
         <div>
           <label>Revenue two years ago (Optional)</label>
-          <input
-            type="number"
-            placeholder={form.revenue3}
-            onChange={(e) => update("revenue3", Number(e.target.value))}
-          />
+         <input
+  type="text"
+  value={form.revenue3 ? `$${form.revenue3.toLocaleString()}` : ""}
+  placeholder="$0"
+  onChange={(e) => {
+    const raw = e.target.value.replace(/[^0-9]/g, "");
+    update("revenue3", Number(raw));
+  }}
+/>
         </div>
         <div>
           <label>Trading years total</label>
-          <select
-            placeholder={form.tradingYears}
-            onChange={(e) =>
-              update("tradingYears", Number(e.target.value))
-            }
-          >
-            <option value={0}>Select</option>
-            <option value={1}>&lt; 1 year</option>
-            <option value={2}>1–2 years</option>
-            <option value={5}>3–5 years</option>
-            <option value={10}>6–10 years</option>
-            <option value={15}>10+ years</option>
-          </select>
+      <select
+  value={form.tradingYears}
+  onChange={(e) => update("tradingYears", Number(e.target.value))}
+>
+  <option value={0}>Select</option>
+  <option value={1}>&lt; 1 year</option>
+  <option value={2}>1–2 years</option>
+  <option value={5}>3–5 years</option>
+  <option value={10}>6–10 years</option>
+  <option value={15}>10+ years</option>
+</select>
+
         </div>
       </div>
       <div className="slider">

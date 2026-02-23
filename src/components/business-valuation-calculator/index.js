@@ -16,24 +16,20 @@ export default function MeMateCalculator() {
   const [activeStep, setActiveStep] = useState(0);
   const [showModal, setShowModal] = useState(false);
   const [form, setForm] = useState({
-
-    revenue1: 0,
-    revenue2: 0,
-    revenue3: 0,
-    tradingYears: 0,
-
-    employees: 0,
-    contractors: 0,
-    ownerInvolvement: "",
-
- 
-    industry: "",
-    marketType: "",
-    profitability: 0,
-    revenueType: 50,
-    customerConcentration: 50,
-    salesDriver: 50,
-    recordsHistory: 50,
+    revenue1: 250000,
+    revenue2: 220000,
+    revenue3: 200000,
+    tradingYears: 5,
+    employees: 6,
+    contractors: 2,
+    profitability: 15,
+    industry: "tech",
+    marketType: "national",
+    ownerInvolvement: "medium",
+    revenueType: 70,
+    customerConcentration: 60,
+    salesDriver: 65,
+    recordsHistory: 75,
   });
 
   const update = (key, value) => {
@@ -85,15 +81,13 @@ export default function MeMateCalculator() {
 
   const getIndustryMultiple = () => {
     const multiples = {
-      "tech": 3.5,
-      "retail": 2.0,
-      "health": 3.2,
-      "finance": 3.0,
-      "construction": 2.5,
+      "tradeconstruction": 3.5,
+      "professionalservices": 2.0,
+      "retailecommerce": 3.2,
+      "manufacturing": 3.0,
+      "creativedigital": 2.5,
       "hospitality": 2.2,
-      "professional-services": 3.0,
-      "manufacturing": 2.8,
-      "trades": 2.3,
+      "other": 3.0,
     };
     
     if (!form.industry) return 2.5;
@@ -110,16 +104,16 @@ export default function MeMateCalculator() {
 
   const getOwnerFactor = () => {
     switch(form.ownerInvolvement) {
-      case "low": return 1.1;  
-      case "medium": return 1.0;
-      case "high": return 0.9; 
+      case "veryhands-on": return 1.1;  
+      case "somewhatinvolved": return 1.0;
+      case "mostlysystemised": return 0.9; 
       default: return 1.0;
     }
   };
 
   const getMarketFactor = () => {
     switch(form.marketType) {
-      case "global": return 1.15;  
+      case "international": return 1.15;  
       case "national": return 1.05;
       case "local": return 0.95;   
       default: return 1.0;
@@ -250,12 +244,15 @@ export default function MeMateCalculator() {
         open={showModal}
         onClose={() => setShowModal(false)}
         center
+       classNames={{
+    modal: "customCalModal",
+  }}
         styles={{
           modal: {
             borderRadius: "18px",
-            padding: "40px 40px 15px 40px",
+            padding: "40px 40px 15px 40px !important",
             maxWidth: "600px",
-            width: "95%",
+            width: "600px",
             background: "var(--Gray-25, rgba(252, 252, 253, 1))",
           },
         }}

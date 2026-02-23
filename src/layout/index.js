@@ -20,6 +20,7 @@ const Layout = ({ children }) => {
   const isSitemapPage = pathname === "/sitemap";
   const isrunyourbusinessPage = pathname === "/legalvision";
   const isNewBusinessPage = pathname === "/granthelp";
+  const isCalculatorPage = pathname === "/business-valuation-calculator";
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -121,7 +122,7 @@ const Layout = ({ children }) => {
           <div className="children">{children}</div>
         </div>
       </div>
-      {!isSitemapPage && !isrunyourbusinessPage && !isNewBusinessPage && (
+      {!isSitemapPage && !isrunyourbusinessPage && !isNewBusinessPage && !isCalculatorPage && (
         <div
           ref={stickySectionRef}
           className="sticky-section-switch"

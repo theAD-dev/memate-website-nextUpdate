@@ -8,17 +8,18 @@ import WhiteButtonBammer from "../../layout/hover-button/WhiteButtonBammer";
 const NextStep = (props) => {
 
   return (
-    <div className="nextStepWrapper">
+    <div className="next-step">
       <h3>Take the</h3>
       <div className="next-title">
         <div className="nextStepHeading">next step</div>
       </div>
       <div className="next-step-page-description">
         <p className="next-step-data">
-        Increase your business value. <br></br>Start systemising today.
+          We believe in supporting Australian businesses.
         </p>
         <span className="next-step-data-description">
-         Strong systems, documented history and operational traceability increase buyer confidence and long-term valuation.
+          Right now, we’re offering zero onboarding and migration fees for every
+          legitimate Australian company.
         </span>
       </div>
       <div className="next-step-btn-container">

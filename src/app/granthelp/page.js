@@ -15,7 +15,7 @@ export const metadata = {
 export default function RunYourBusiness() {
   return (
     // <AppWrapper>
-      <RunYourBusinessPage />
+      <RunYourBusinessPage /> 
     // </AppWrapper>
   );
 }

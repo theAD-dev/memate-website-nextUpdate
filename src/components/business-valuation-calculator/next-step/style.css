@@ -1,9 +1,9 @@
-.nextStepWrapper {
+.next-step {
   margin-top: 80px;
   margin-bottom: 80px;
 }
 
-.nextStepWrapper h3 {
+.next-step h3 {
     color: #29292b;
     text-align: center;
     font-size: 32px;
@@ -20,7 +20,7 @@
     background-size: contain;
     background-repeat: no-repeat;
 }
-.nextStepWrapper button {
+.next-step button {
   border-radius: 60px;
   background: #29292b;
   color: #fff;
@@ -65,10 +65,10 @@
           transform: translateY(0);
       }
 }
-.nextStepWrapper {
+.next-step {
   overflow: hidden;
 }
-.nextStepWrapper .request-btn {
+.next-step .request-btn {
   margin-top: 18px;
 }
 .next-step-btn-container {
@@ -78,8 +78,8 @@
   margin-top: 0;
 }
 
-.nextStepWrapper .next-step-page-description {
-    margin-top: 14px;
+.next-step-page-description {
+    margin-top: 54px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -112,12 +112,12 @@
   margin-bottom: 14px;
 }
 @media screen and (max-width: 767px) {
-.nextStepWrapper {
-    margin-top: 27px;
+  .next-step {
+    margin-top: 113px;
     margin-bottom: 15px;
     padding: 0 15px;
 }
-.nextStepWrapper h3, .nextStepWrapper .next-step-data {
+.next-step h3, .next-step-data {
   font-size: 26px;
   letter-spacing: 0;
   line-height: 35px;
@@ -133,7 +133,7 @@
   margin-top:0px;
   gap: 15px;
 }
-.nextStepWrapper h3 {
+.next-step h3 {
   margin: 0px 0px 0px 0px;
 }
 .next-step-data-description {
@@ -151,7 +151,7 @@
   .next-step-page-description {
     margin-top: 15px;
 }
-.nextStepWrapper {
+.next-step {
   margin-top: 50px;
   margin-bottom: 30px;
 }

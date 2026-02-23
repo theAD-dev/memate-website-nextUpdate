@@ -110,6 +110,7 @@ const Footer = () => {
                <Link href="/knowledge-base">Knowledge Base</Link>
                 <Link href="/customer-stories">Customer Stories</Link>
                 <Link href="/supplier-database">Supplier Database</Link>
+                <Link href="/business-valuation-calculator">Business Valuation Calculator</Link>
                 <Link href="/subprocessors">Subprocessors</Link>
                 <Link href="/brand">Brand</Link>
                 <Link href="/sitemap">Sitemap</Link>

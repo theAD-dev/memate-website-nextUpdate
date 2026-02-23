@@ -175,6 +175,14 @@ const SeamlessInegration = () => {
   }, []);
 
   return (
+    <>
+    <div className="introTextTop introTextTopIntegration">
+      <h4>Built for Modern Australian Businesses</h4>
+      <p>MeMate is trusted by service-based businesses, agencies, trades, and professional teams who need
+      better visibility and control over their operations.</p>
+      <p>Instead of juggling disconnected systems, MeMate brings everything together — helping businesses
+      work smarter, reduce manual admin, and focus on growth.</p>
+    </div>
     <section className="integrationOuter">
       <div className="integrationWrapperAni" ref={wrapperRef}>
         <svg className="svg-lines">
@@ -227,6 +235,14 @@ const SeamlessInegration = () => {
         </div>
       </div>
     </section>
+    <div className="introTextTop introTextTopBottom">
+      <h4>Replace Multiple Tools with One Smart System</h4>
+      <p>Stop managing your business across spreadsheets, CRMs, accounting tools, and task apps.</p>
+      <p>MeMate replaces fragmented systems with a unified software for business management that
+simplifies operations, improves collaboration, and gives you a single source of truth for your
+business.</p>
+    </div>
+    </>
   );
 };
 

@@ -54,15 +54,6 @@ const Images = {
     budEssential:"https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/features/profitability-budgeting-img05-min.png",
     budModern:"https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/features/profitability-budgeting-img06-min.png",
 
-
-
-
-
-
-
-
-
-
   landingHero: "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/slider/img-hero-min.webp",
   landingHero1x: "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/landingHero1x.png",
   landingHeromodel: "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/main-modal.png",
@@ -185,20 +176,8 @@ const Images = {
   linkdinIcon:"https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/linkdin.svg",
   macBook:'https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/macbook-mock-up.svg',
   
-  
-  
-  
-  
   MenuContact:"https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/Menu-img.svg",
   pipeLine:"https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/pipelinie-menu.svg",
-  
- 
-  
-  
-  
-  
- 
- 
   
   suitableMenu:"https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/suitable-menu.svg",
   suitableImage:"https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/suitable-temp.svg",
@@ -211,19 +190,6 @@ const Images = {
   PowerfulEmployee:"https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/powerful-employee.svg",
   employeeAdvanced:"https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/employee-advanced.svg",
   employeeAgile:"https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/employee-agile.svg",
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
   
   jobPlanning:"https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/job-planning-img.svg",
   jobProactive:"https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/job-proactive-img.svg",

@@ -9,7 +9,7 @@ const AboutMematePage = () => {
     <AppWrapper>
     <Layout>
       <div className="bgshadowwrapper">
-        <AboutMemateComponent/>
+        <AboutMemateComponent/> 
         </div>
     </Layout>
     </AppWrapper>

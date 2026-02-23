@@ -131,6 +131,9 @@ margin: 0 auto;
     border-radius: 0 !important;
     border: 0 !important;
 }
+.customCalModalHeading {
+    padding: 26px 26px 0;
+}
 .tab-hover-wrapper:before {
     position: absolute;
     content: "";
@@ -138,7 +141,7 @@ margin: 0 auto;
     width: 1px;
     height: 100%;
 }
-.tab-hover-wrapper:has(.memate-tab-btn.active-tab)::before {
+.tab-hover-wrapper:has(.memate-tab-btn.active-tab1)::before {
     content: "";
     position: absolute;
     background: rgb(0, 0, 0);
@@ -338,32 +341,46 @@ p.profitabilityCount {
   color: var(--Gray-400, rgb(0, 0, 0));
   opacity: 1;
 }
-.stepCalarea .grid input, .stepCalarea .grid select {
+.stepCalarea .grid input {
     border: 1px solid var(--Border, #d0d5dd);
-    border-radius: 4px;
     width: 100%;
-    padding: 10px 14px;
-    font-family: 'sequel_sans_roman_head' !important;
-    font-weight: 310;
-    font-size: 16px;
-    line-height: 24px;
     letter-spacing: -0.5%;
-    /* color: var(--Gray-400, rgba(152, 162, 179, 1)); */
+    border-radius: 4px;
+    padding: 10px 14px;
+    font-size: 16px;
+    font-weight: 310;
+    line-height: 24px;
+    font-family: 'sequel_sans_roman_head' !important;
+    min-height: 46px;
 }
-.tab-hover-wrapper:first-child::before,
-.tab-hover-wrapper:last-child::before {
+.stepCalarea .grid select {
+    border: 1px solid var(--Border, #d0d5dd);
+    width: 100%;
+    border-radius: 4px;
+    height: 46px;            
+    padding: 10px 14px;
+    font-size: 16px;
+    font-weight: 400;        
+    line-height: normal;
+    font-family: 'sequel_sans_roman_head' !important;
+    /* -webkit-appearance: none;  
+    appearance: none; */
+    background-color: #fff;
+}
+.tab-hover-wrapper:first-child::before
+{
     display: none;
 }
 .memate-tab-btn:last-child {
   border-right: none;
 }
-.tab-hover-wrapper:first-child .memate-tab-btn.active-tab{
+.tab-hover-wrapper:first-child .memate-tab-btn.active-tab1{
   border-radius: 12px 0 0 12px !important;
 }
-.tab-hover-wrapper:last-child .memate-tab-btn.active-tab{
+.tab-hover-wrapper:last-child .memate-tab-btn.active-tab1{
   border-radius: 0 12px 12px 0 !important;
 }
-.memate-tab-btn.active-tab {
+.memate-tab-btn.active-tab1 {
     z-index: 5;
     border: 2px solid rgba(41, 41, 43, 1) !important;
 }
@@ -814,3 +831,98 @@ p.profitabilityCount {
 }
 
 
+@media screen and (max-width: 600px) {
+.memate-wrapper {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 11px;
+}
+.customCalModal {
+    width: 96% !important;
+    padding: 10px !important;
+}
+.memateCalitle {
+    font-size: 31px;
+    line-height: 42px;
+}
+.memateCalSubtitle {
+    font-size: 48px;
+    line-height: 59px;
+}
+.customCalModalHeading {
+    padding: 26px 9px 0;
+}
+.customCalModalHeading h2 {
+    font-size: 18px;
+}
+.memate-tab-btn {
+    min-height: 80px;
+    padding: 1px 8px;
+}
+.memate-tab-btn .tab-title {
+    font-size: 14px;
+}
+.memate-tab-btn .tab-subtitle {
+    font-size: 10px;
+    font-weight: 420;
+    line-height: 13px;
+}
+.stepCalarea .grid {
+    align-items: flex-start;
+    gap: 8px;
+    margin-top: 70px;
+    display: grid;
+    width: 100%;
+    margin: 23px auto;
+}
+.results-area {
+    margin-top: 35px;
+    display: grid;
+    gap: 20px;
+    text-align: center;
+}
+.memateCalbox .bottom-bar {
+    border-top: 1px solid #000;
+    justify-content: center;
+    align-items: center;
+    margin-top: 24px;
+    padding-top: 15px;
+    display: grid;
+    text-align: center;
+}
+.questionAnswerMain {
+    width: 100% !important;
+    margin: 0 auto;
+}
+.memateCalbox .bottom-bar p {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.results-area .value-block h2 {
+    letter-spacing: 0;
+    color: #29292b;
+    margin: 7px 0;
+    font-size: 42px;
+    font-weight: 425;
+    line-height: 44px;
+}
+.specials-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 17px 11px;
+    padding: 25px 0px;
+    display: grid;
+}
+.react-responsive-modal-modal {
+    margin: 0 !important;
+}
+.questionAnswerMain .question-answer-heading-wrapperF p {
+    font-size: 34px !important; 
+    line-height: 34px !important;
+    margin-bottom: 20px !important;
+}
+.nextStepWrapper {
+    margin-top: 53px;
+    margin-bottom: 15px;
+    padding: 0 15px;
+}
+}

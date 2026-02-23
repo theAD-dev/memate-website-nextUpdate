@@ -22,6 +22,11 @@ const MenuRessources = () => {
           </div>
           <div className="menu-management-feature">
             <div className="menu-client-management">
+            <Link href="/business-valuation-calculator" className={` ${pathname === "/business-valuation-calculator" ? "navbar-item-active" : ""}`}> <p className="clinet-management-text icon-hide">Business Valuation Calculator</p></Link>
+            </div>
+          </div>
+          <div className="menu-management-feature">
+            <div className="menu-client-management">
             <Link href="/brand" className={` ${pathname === "/brand" ? "navbar-item-active" : ""}`}> <p className="clinet-management-text icon-hide">Brand</p></Link>
             </div>
           </div>

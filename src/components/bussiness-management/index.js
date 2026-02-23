@@ -37,17 +37,18 @@ const BussinessManagement = () => {
           </div>
         </div>
       </div>
-      <div className="how-to-use">
+      {/* <div className="how-to-use">
         <p>
           Easy-to-Use Business Management Software: to Start, Run,
           <br /> and Succeed in Your Business{" "}
         </p>
-      </div>
-      <div className="businesses-mode fontFamilyRomanHead">
-        <span>
-          Made for Small to Medium Businesses & Business Projects, Offering
-          Simplicity & Control
-        </span>
+      </div> */}
+      <div className="businesses-mode fontFamilyRomanHead homePageNewContent">
+       <p>Run your entire business from one powerful platform. <b>MeMate</b> is an all-in-one <b>business
+          management software</b> designed to help modern companies manage projects, teams, finances, and
+          clients with clarity and control.</p>
+        <p>Whether you’re scaling operations or replacing spreadsheets and disconnected tools, MeMate
+         delivers smarter workflows, real-time insights, and seamless collaboration — all in one place.</p>
       </div>
 
       <div className="dflexbannerbtn">

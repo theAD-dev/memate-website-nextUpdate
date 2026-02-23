@@ -6,18 +6,26 @@ export default function EmployeesStep({ form, update }) {
       <div>
         <label>Number of full-time employees</label>
         <input
-          type="number"
-          value={form.employees}
-          onChange={(e) => update("employees", e.target.value)}
-        />
+              type="text"
+              value={form.employees ? `${form.employees.toLocaleString()}` : ""}
+              placeholder="$0"
+              onChange={(e) => {
+                const raw = e.target.value.replace(/[^0-9]/g, "");
+                update("employees", Number(raw));
+              }}
+            />
       </div>
       <div>
         <label>Number of contractors (optional)</label>
-        <input
-          type="number"
-          value={form.contractors}
-          onChange={(e) => update("contractors", e.target.value)}
-        />
+         <input
+              type="text"
+              value={form.contractors ? `${form.contractors.toLocaleString()}` : ""}
+              placeholder="$0"
+              onChange={(e) => {
+                const raw = e.target.value.replace(/[^0-9]/g, "");
+                update("contractors", Number(raw));
+              }}
+            />
       </div>
       <div>
         <label>Owner involvement</label>
@@ -28,9 +36,9 @@ export default function EmployeesStep({ form, update }) {
           }
         >
           <option value="">Select</option>
-          <option value="low">Low</option>
-          <option value="medium">Medium</option>
-          <option value="high">High</option>
+          <option value="veryhands-on">Very hands-on</option>
+          <option value="somewhatinvolved">Somewhat involved</option>
+          <option value="mostlysystemised">Mostly systemised</option>
         </select>
       </div>
     </div>

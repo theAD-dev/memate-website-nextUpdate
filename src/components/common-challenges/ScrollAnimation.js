@@ -1,6 +1,6 @@
 export default function ScrollAnimation() {
   const images = Array(6).fill(
-    "https://res.cloudinary.com/dn0jqjad3/image/upload/v1770987718/fffff_f9uwhw.png"
+    "https://memate-website.s3.ap-southeast-2.amazonaws.com/fffff_f9uwhw.png"
   );
 
   return (

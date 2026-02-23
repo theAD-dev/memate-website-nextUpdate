@@ -49,7 +49,7 @@ export default function Tabs({ steps, activeStep, setActiveStep }) {
             <button
               onClick={() => setActiveStep(index)}
               className={`memate-tab-btn ${
-                activeStep === index ? "active-tab" : ""
+                activeStep === index ? "active-tab1" : ""
               }`}
             >
               <span className="tab-title">{label}</span>
