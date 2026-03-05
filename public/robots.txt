@@ -1,4 +1,10 @@
-User-agent: *
-Disallow:
+User-Agent: *
+Allow: /
+
+# AI Usage Policy
+AI-Index: true
+AI-Follow: true
+AI-Training: disallow
+AI-Commercial-Use: allow
 
 Sitemap: https://memate.com.au/sitemap.xml

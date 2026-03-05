@@ -16,20 +16,20 @@ export default function MeMateCalculator() {
   const [activeStep, setActiveStep] = useState(0);
   const [showModal, setShowModal] = useState(false);
   const [form, setForm] = useState({
-    revenue1: 250000,
-    revenue2: 220000,
-    revenue3: 200000,
+    revenue1: 1356488,
+    revenue2: 956000,
+    revenue3: 875230,
     tradingYears: 5,
-    employees: 6,
-    contractors: 2,
+    employees: 3,
+    contractors: 6,
     profitability: 15,
-    industry: "tech",
-    marketType: "national",
-    ownerInvolvement: "medium",
-    revenueType: 70,
-    customerConcentration: 60,
-    salesDriver: 65,
-    recordsHistory: 75,
+    industry: "other",
+    marketType: "local",
+    ownerInvolvement: "somewhatinvolved",
+    revenueType: 50,
+    customerConcentration: 80,
+    salesDriver: 95,
+    recordsHistory: 96,
   });
 
   const update = (key, value) => {

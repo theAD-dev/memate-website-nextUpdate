@@ -8,7 +8,7 @@ const SubprocessorsPage = () => {
     <AppWrapper>
     <Layout>
       <div className="bgshadowwrapper">
-        <SubprocessorsComponent/>  
+        <SubprocessorsComponent/>   
         </div>
     </Layout>
     </AppWrapper>

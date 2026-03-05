@@ -15,6 +15,19 @@ html {
     position: sticky;
     top: 0;
 }
+.intro-sticky12 .nextStepWrapper {
+    margin-top: 204px !important;
+    margin-bottom: 0 !important;
+}
+.intro-sticky12 {
+    justify-content: center;
+    align-items: center;
+    height: 800px;
+    display: flex;
+    position: sticky;
+    top: 0px;
+    overflow: hidden;
+}
 .pageBreadcrumbs ul li:last-child a {
     color: #106b99;
 }
@@ -217,6 +230,17 @@ span.ssMDFont {
 @media screen and (max-width: 767px) {
     .get-started-wrapper {
     height: auto;
+}
+.intro-sticky12{
+            height: 500px;
+}
+.apply-content12 {
+    margin-top: 0 !important;
+}
+.intro-sticky12 .nextStepWrapper {
+    margin-top: 27px !important;
+    margin-bottom: 15px !important;
+    padding: 0 15px;
 }
 .sticky-section-switch .next-step {
     margin-top: 0px !important;

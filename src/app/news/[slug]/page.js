@@ -138,6 +138,7 @@ export async function generateMetadata({ params }) {
           'max-snippet': -1,
         },
       },
+   
       
       other: {
         'article:author': post.author || 'MeMate',

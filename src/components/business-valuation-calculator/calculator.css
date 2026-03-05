@@ -377,8 +377,24 @@ p.profitabilityCount {
 .tab-hover-wrapper:first-child .memate-tab-btn.active-tab1{
   border-radius: 12px 0 0 12px !important;
 }
-.tab-hover-wrapper:last-child .memate-tab-btn.active-tab1{
-  border-radius: 0 12px 12px 0 !important;
+.tab-hover-wrapper:last-child .memate-tab-btn.active-tab1 {
+    border: 2px solid #29292b !important;
+    border-radius: 0 12px 12px 0px !important;
+}
+.tab-tooltip-popup {
+    /* width: 370px; */
+    padding: 6px;
+    font-size: 12px;
+    font-weight: 360;
+    line-height: 130%;
+    transition: all .25s;
+    position: absolute;
+    top: -10px;
+    left: 50%;
+}
+
+.tab-hover-wrapper:has(.memate-tab-btn.active-tab1):before {
+    width: 0px;
 }
 .memate-tab-btn.active-tab1 {
     z-index: 5;
@@ -832,10 +848,27 @@ p.profitabilityCount {
 
 
 @media screen and (max-width: 600px) {
+  .memate-tabs {
+    display: block;
+}
+.tab-hover-wrapper:last-child .memate-tab-btn.active-tab1 {
+    border: 2px solid #29292b !important;
+    border-radius: 0 0px 12px 12px !important;
+}
+.tab-hover-wrapper:first-child .memate-tab-btn.active-tab1 {
+    border-radius: 12px 12px 0px 0px !important;
+    border: 2px solid #29292b !important;
+}
+.mainChatWrapper .leftTextData {
+    left: -44px !important;
+}
 .memate-wrapper {
     width: 100%;
     margin: 0 auto;
     padding: 0 11px;
+}
+.results-area .value-block small br {
+    display: none !important;
 }
 .resultsMainWrap {
     position: sticky;
@@ -845,7 +878,7 @@ p.profitabilityCount {
     overflow: visible !important;
 }
 .resultsHeadWrap {
-    height: 100vh;
+    height: 81vh;
     overflow-y: auto;
 }
 .customCalModal {
@@ -869,6 +902,20 @@ p.profitabilityCount {
 .memate-tab-btn {
     min-height: 80px;
     padding: 1px 8px;
+    border-bottom: 1px solid #ccc !important;
+    border-right: 0 !important;
+    border-left: 0 !important;
+}
+.tab-hover-wrapper:before {
+    content: "";
+    background: #d0d5dd;
+    width: 0px;
+    height: 100%;
+    position: absolute;
+}
+.tab-hover-wrapper:last-child .memate-tab-btn {
+    border-bottom: 0px solid #ccc !important;
+    border-right: 0 !important;
 }
 .memate-tab-btn .tab-title {
     font-size: 14px;
@@ -887,10 +934,15 @@ p.profitabilityCount {
     margin: 23px auto;
 }
 .results-area {
+    text-align: center;
+    gap: 0px;
     margin-top: 35px;
     display: grid;
-    gap: 20px;
-    text-align: center;
+    grid-template-columns: 1.5fr 1.5fr;
+}
+.results-area .value-block small {
+    font-size: 10px;
+    line-height: 20px;
 }
 .memateCalbox .bottom-bar {
     border-top: 1px solid #000;
@@ -910,7 +962,7 @@ p.profitabilityCount {
     margin-bottom: 20px;
 }
 .results-area .value-block p {
-    font-size: 14px;
+    font-size: 12px;
 }
 .results-area .value-block p br {
     display: none;
@@ -919,7 +971,7 @@ p.profitabilityCount {
     letter-spacing: 0;
     color: #29292b;
     margin: 7px 0;
-    font-size: 29px;
+    font-size: 23px;
     font-weight: 425;
     line-height: 31px;
 }

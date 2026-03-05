@@ -118,7 +118,7 @@ export default function Chart({ valuation, uplift }) {
 
      ctx.fillText("With MeMate", x - 110, y - 10);
 
-      // ✅ draw icon safely
+      
       const icon = infoIconRef.current;
       if (icon && icon.complete) {
         ctx.drawImage(icon, x - 35, y - 23, 16, 16);
@@ -240,7 +240,7 @@ y: {
         left: 60,  
         right: 0,
         bottom: 0, 
-        top: 0,
+         top: 40,
       },
     },
       onHover: (event, elements, chart) => {
@@ -289,10 +289,10 @@ y: {
   return (
     <>
     <div className="mainChatWrapper" style={{ position: "relative", height: "400px", marginTop: "20px" }}>
-        <div style={{
+        <div className="leftTextData" style={{
           position: "absolute",
           left: "-53px",
-          top: "15%",
+          top: "22%",
           transform: "translateY(-50%) rotate(-90deg)",
           fontSize: "15px",
           color: "rgba(136, 142, 158, 1)",
@@ -304,6 +304,17 @@ y: {
         </div>
         <div style={{ height: "390px", marginLeft: "-60px" }}>
           <Line data={data} options={options} plugins={[customPlugin]} />
+        </div>
+        <div style={{
+          position: "absolute",
+          left: "10px",
+          bottom: "0px",
+          fontSize: "15px",
+          color: "rgba(136, 142, 158, 1)",
+          fontFamily: "sequel_sans_roman_head",
+          zIndex: 10,
+        }}>
+          Today
         </div>
         <div style={{
           position: "absolute",
